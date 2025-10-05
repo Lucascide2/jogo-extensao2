@@ -1,0 +1,67 @@
+{
+    "phase_1": {
+        "junior": {
+            "is_active": true,
+            "dialogue_text": [
+                "Olá, estagiário! =)",
+                "Me ajude a resolver essa demanda.",
+                "Eu gostaria de saber como visualizar as linhas da tabela alunos.",
+                "<INPUT>",
+                "Obrigada!"
+            ],
+            "correct_answer": "select"
+        },
+        "pleno": {
+            "is_active": true,
+            "dialogue_text": [
+                "Olá, estagiário! =)",
+                "Me ajude a resolver essa demanda.",
+                "Eu gostaria de saber como deletar as linhas da tabela alunos.",
+                "<INPUT>",
+                "Obrigado!"
+            ],
+            "correct_answer": "delete"
+        },
+        "senior": {
+            "is_active": true,
+            "dialogue_text": [],
+            "correct_answer": ""
+        }
+    },
+    "phase_2": {
+        "junior": {
+            "is_active": false,
+            "dialogue_text": [],
+            "correct_answer": ""
+        },
+        "pleno": {
+            "is_active": true,
+            "dialogue_text": [
+                "Olá, estagiário! =)",
+                "Me ajude a resolver essa demanda.",
+                "Eu gostaria de saber como deletar as linhas da tabela alunos.",
+                "<INPUT>",
+                "Obrigado!"
+            ],
+            "correct_answer": "delete"
+        },
+        "senior": {
+            "is_active": true,
+            "dialogue_text": [
+                "Olá, estagiário! =)",
+                "Me ajude a resolver essa demanda.",
+                "Eu gostaria de saber como visualizar as linhas da tabela alunos.",
+                "<INPUT>",
+                "Obrigada!"
+            ],
+            "correct_answer": "select"
+        }
+
+    },
+    "phase_3": {
+
+    },
+    "phase_4": {
+
+    }
+}
