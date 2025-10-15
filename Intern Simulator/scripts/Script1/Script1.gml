@@ -11,6 +11,5 @@ function generate_dialogue(_text) {
         prev_idx += line_length;
     }
 
-	show_debug_message(new_string);
     return new_string;
 }

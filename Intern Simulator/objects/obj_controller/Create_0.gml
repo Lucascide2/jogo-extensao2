@@ -10,7 +10,7 @@ file_text_close(json_text);
 
 var data = json_parse(content);
 
-show_debug_message(is_struct(data))
+
 
 
 // FASES 1, 2, 3
@@ -28,7 +28,7 @@ for (var j=0; j < 3; j++) {
 		json_obj = phase_data.junior
 	} 
 	else if (j == 1) {
-		show_debug_message("dkopSAEIOJPDQWEJKOPDijqwdq0joJ")
+
 		obj = obj_pleno
 		json_obj = phase_data.pleno
 	} 
@@ -58,5 +58,8 @@ for (var j=0; j < 3; j++) {
 		inst_task.visible = false;
 	}	
 }
+
+
+obj_computer_option_1.is_available = true
 
 	

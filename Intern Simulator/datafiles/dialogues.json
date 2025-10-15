@@ -23,7 +23,7 @@
             "correct_answer": "delete"
         },
         "senior": {
-            "is_active": true,
+            "is_active": false,
             "dialogue_text": [],
             "correct_answer": ""
         }

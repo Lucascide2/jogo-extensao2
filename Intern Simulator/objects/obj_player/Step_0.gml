@@ -28,6 +28,8 @@ if (!moving and able_to_move) {
         moving = true;
 		
 		dir = 2
+		
+		sprite_index = spr_player_walk_right
     }
 	
 	var check_place_meeting_furniture = place_meeting(target_x, target_y, obj_table)
@@ -75,8 +77,8 @@ if (moving) {
         moving = false;
 		
 		
-		if (dir == 2) sprite_index=spr_player_idle_right;
-		if (dir == 0) sprite_index=spr_player_idle_left;
+		if (dir == 2 && !keyboard_check(vk_right)) sprite_index=spr_player_idle_right;
+		if (dir == 0) && !keyboard_check(vk_left)  sprite_index=spr_player_idle_left;
 		
     }
 }
@@ -127,8 +129,7 @@ if (keyboard_check_pressed(ord("Z"))) {
 		var player_pc = instance_place(x+7, y, obj_player_computer)
 		if (player_pc != noone) {
 			able_to_interact = false;
-			show_debug_message(player_pc)
-		
+
 			obj_camera_controller.following = false;
 			obj_camera_controller.target_x = 584 + 135; // mover para outro ponto, se quiser
 			obj_camera_controller.target_y = 0;
