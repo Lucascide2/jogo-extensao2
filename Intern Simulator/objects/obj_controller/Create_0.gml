@@ -61,5 +61,6 @@ for (var j=0; j < 3; j++) {
 
 
 obj_computer_option_1.is_available = true
+obj_computer_option_2.is_unlockable = true
 
 	
