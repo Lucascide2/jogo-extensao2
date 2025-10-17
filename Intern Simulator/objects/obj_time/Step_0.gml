@@ -3,7 +3,6 @@ timer_ms += delta_time; // delta_time em milissegundos
 if (timer_ms >= 60000000) { // 60000 ms = 1 minuto
     timer_ms -= 60000000;   // reinicia o timer
     minutos += 1;  
-    show_debug_message("Um minuto passou! Total: " + string(minutos));
 	
 	horas = 13 + floor(minutos/2)
 	//show_debug_message(horas)

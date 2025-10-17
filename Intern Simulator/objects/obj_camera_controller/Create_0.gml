@@ -1,6 +1,6 @@
 // Configurações iniciais da câmera
 largura = 300;
-altura = 180;
+altura = 170;
 
 borda_horizontal = 150;
 borda_vertical = 90;

@@ -17,6 +17,7 @@ var new_y = target_y;
 if (following) new_x = clamp(new_x, 0, 505 - largura);
 else new_x = clamp(new_x, 0, room_width - largura);
 
+if (following) new_y = clamp(new_y, 0, 175 - altura);
 new_y = clamp(new_y, 0, room_height - altura);
 
 // 📸 Atualiza a posição da câmera
