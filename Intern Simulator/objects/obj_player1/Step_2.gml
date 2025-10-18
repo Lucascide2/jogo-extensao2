@@ -18,7 +18,7 @@ x += velh;
  
 //colisão vertical
  
-var _col = instance_place(x, y +velv, obj_chao);
+_col = instance_place(x, y +velv, obj_chao);
 	if(_col){
 		if(velv>0){
 			// indo para baixo
