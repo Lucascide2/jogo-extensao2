@@ -1,12 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_main_menu",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_button_selector_main_menu",
+  "eventList":[],
   "managed":true,
-  "name":"obj_main_menu",
+  "name":"obj_button_selector_main_menu",
   "overriddenProperties":[],
   "parent":{
     "name":"Menu",
@@ -31,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprite_main_menu",
-    "path":"sprites/sprite_main_menu/sprite_main_menu.yy",
+    "name":"sprite_button_selector_main_menu",
+    "path":"sprites/sprite_button_selector_main_menu/sprite_button_selector_main_menu.yy",
   },
   "spriteMaskId":null,
   "visible":true,

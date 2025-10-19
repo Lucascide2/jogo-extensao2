@@ -1,12 +1,14 @@
 {
   "$GMObject":"",
-  "%Name":"obj_main_menu",
+  "%Name":"obj_computer_option_9",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_main_menu",
+  "name":"obj_computer_option_9",
   "overriddenProperties":[],
   "parent":{
     "name":"Menu",
@@ -31,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprite_main_menu",
-    "path":"sprites/sprite_main_menu/sprite_main_menu.yy",
+    "name":"spr_computer_option_blocked",
+    "path":"sprites/spr_computer_option_blocked/spr_computer_option_blocked.yy",
   },
   "spriteMaskId":null,
   "visible":true,
