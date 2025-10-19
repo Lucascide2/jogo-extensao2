@@ -2,13 +2,13 @@
   "$GMTileSet":"v1",
   "%Name":"tl_level",
   "autoTileSets":[
-    {"$GMAutoTileSet":"","%Name":"autotile_1","closed_edge":false,"name":"autotile_1","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[
-        40,46,45,30,26,55,49,51,27,29,54,52,48,33,32,35,39,102,86,108,21,83,84,89,41,87,106,90,59,103,102,109,
-        43,97,20,92,22,93,60,112,58,111,24,96,62,98,100,
-      ],},
     {"$GMAutoTileSet":"","%Name":"autotile_2","closed_edge":false,"name":"autotile_2","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[
         154,160,159,144,140,169,163,165,141,143,168,166,162,147,146,149,153,219,200,165,135,197,198,146,155,
         201,220,147,173,217,216,166,157,211,134,206,136,207,174,226,172,225,138,210,176,212,214,
+      ],},
+    {"$GMAutoTileSet":"","%Name":"autotile_3","closed_edge":false,"name":"autotile_3","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[
+        40,46,45,30,26,55,49,51,27,29,54,52,48,33,32,35,39,105,86,108,21,83,84,89,41,87,106,90,59,103,102,109,
+        43,97,20,92,22,93,60,112,58,111,24,96,62,98,100,
       ],},
   ],
   "macroPageTiles":{
