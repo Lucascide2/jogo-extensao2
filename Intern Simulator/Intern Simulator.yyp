@@ -137,11 +137,7 @@
     {"roomId":{"name":"mg_tutorial","path":"rooms/mg_tutorial/mg_tutorial.yy",},},
     {"roomId":{"name":"mg_modelo","path":"rooms/mg_modelo/mg_modelo.yy",},},
     {"roomId":{"name":"Escritorio","path":"rooms/Escritorio/Escritorio.yy",},},
-<<<<<<< HEAD
-    {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
-=======
     {"roomId":{"name":"mg_modelo","path":"rooms/mg_modelo/mg_modelo.yy",},},
->>>>>>> 5d84296245b01ffd462df916f1a33ffeba3403b7
   ],
   "templateType":"game",
   "TextureGroups":[
