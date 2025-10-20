@@ -42,9 +42,13 @@ if (!moving and able_to_move) {
 		sprite_index = spr_player_walk_right
     }
 	
-	var check_place_meeting_furniture = place_meeting(target_x, target_y, obj_table)
+	
+	var tolerance_sup = 10
+	 
+	
+	var check_place_meeting_furniture = place_meeting(target_x, target_y, obj_colisor)
 	var check_place_meeting_npc = place_meeting(target_x, target_y, obj_junior) or place_meeting(target_x, target_y, obj_pleno) or place_meeting(target_x, target_y, obj_senior)
-	var check_place_meeting =  check_place_meeting_furniture
+	var check_place_meeting =  check_place_meeting_furniture or target_y < 50
 	
 	if (check_place_meeting){
 		target_x = x;
