@@ -1,4 +1,8 @@
-timer_ms += delta_time; // delta_time em milissegundos
+
+if (!obj_menu_esc.is_active) {
+	timer_ms += delta_time; // delta_time em milissegundos
+}
+
 
 if (timer_ms >= 60000000) { // 60000 ms = 1 minuto
     timer_ms -= 60000000;   // reinicia o timer

@@ -1,7 +1,7 @@
-option_text = "Day 1"
+option_text = "day_1"
+level_text = "Day 1"
 
-is_available = true
-is_unlockable = false
+is_available = false
 
 // Cálculos para obtenção das posições relativas dos objetos
 

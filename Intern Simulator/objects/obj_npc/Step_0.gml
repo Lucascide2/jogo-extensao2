@@ -20,6 +20,9 @@ if (start_dialogue) {
 			obj_player.able_to_move = true
 			obj_player.able_to_interact = true
 			
+			keyboard_clear(vk_escape)
+			
+			
 		} else if (keyboard_check_pressed(vk_enter) and input_text == correct_answer) {
 			current_dialogue_index += 1
 			display_text = ""
@@ -63,6 +66,8 @@ if (start_dialogue) {
 			timer = 0;
 			done = false;
 			text_index = 0;
+			
+			keyboard_clear(ord("Z"))
 		}	
 	}
 	

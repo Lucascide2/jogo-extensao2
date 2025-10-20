@@ -3,6 +3,8 @@ option_text = "Select"
 is_available = false
 is_unlockable = false
 
+room_to_go = mg_tutorial
+
 // Cálculos para obtenção das posições relativas dos objetos
 
 real_dif_x = x - 539;
