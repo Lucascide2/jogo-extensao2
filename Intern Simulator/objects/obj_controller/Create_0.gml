@@ -15,7 +15,7 @@ var data = json_parse(content);
 
 // FASES 1, 2, 3
 if (variable_global_exists("level")) fase = global.level
-else fase = 1
+else fase = "day_1"
 
 phase_data = data[$ fase]
 

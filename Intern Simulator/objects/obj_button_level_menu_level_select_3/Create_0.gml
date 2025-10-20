@@ -1,6 +1,6 @@
 option_text = "Day 3"
 
-is_available = true
+is_available = false
 is_unlockable = false
 
 // Cálculos para obtenção das posições relativas dos objetos

@@ -4,7 +4,7 @@ if (!obj_main_menu.in_main_menu) {
 	
 		if (obj_menu_level_select.obj_selected == object_index) {
 			if (keyboard_check_pressed(ord("Z"))) {
-				global.level = "phase_1"
+				global.level = "day_1"
 				room_goto(Escritorio)
 			}
 		}

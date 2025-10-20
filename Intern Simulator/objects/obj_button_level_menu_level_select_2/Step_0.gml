@@ -4,8 +4,8 @@ if (!obj_main_menu.in_main_menu) {
 	
 		if (obj_menu_level_select.obj_selected == object_index) {
 			if (keyboard_check_pressed(ord("Z"))) {
-			// Pop-up de dica
-			show_debug_message(object_get_name(object_index))
+				global.level = "day_2"
+				room_goto(Escritorio)
 			}
 		}
 	} else if (is_unlockable) {
@@ -19,4 +19,3 @@ if (!obj_main_menu.in_main_menu) {
 	}
 
 }
-
