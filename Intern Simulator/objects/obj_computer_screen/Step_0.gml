@@ -5,6 +5,8 @@ if (in_screen) {
 		obj_camera_controller.following = true;
 		obj_player.able_to_move = true;
 		obj_player.able_to_interact = true;
+		
+		keyboard_clear(vk_escape)
 	}
 	
 

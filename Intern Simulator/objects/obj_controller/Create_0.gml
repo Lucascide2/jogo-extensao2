@@ -14,7 +14,8 @@ var data = json_parse(content);
 
 
 // FASES 1, 2, 3
-fase = "phase_1";
+if (variable_global_exists("level")) fase = global.level
+else fase = "day_1"
 
 phase_data = data[$ fase]
 
@@ -60,6 +61,6 @@ for (var j=0; j < 3; j++) {
 }
 
 
-obj_computer_option_1.is_available = true
+obj_computer_option_1.is_unlockable = true
 
 timer = 60 * 10;   // 60 FPS * 10 minutes * 60 seconds
