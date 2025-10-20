@@ -62,4 +62,4 @@ for (var j=0; j < 3; j++) {
 
 obj_computer_option_1.is_available = true
 
-	
+timer = 60 * 10;   // 60 FPS * 10 minutes * 60 seconds

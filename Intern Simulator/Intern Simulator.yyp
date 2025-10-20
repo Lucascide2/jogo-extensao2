@@ -65,6 +65,7 @@
     {"id":{"name":"obj_table","path":"objects/obj_table/obj_table.yy",},},
     {"id":{"name":"obj_task","path":"objects/obj_task/obj_task.yy",},},
     {"id":{"name":"obj_time","path":"objects/obj_time/obj_time.yy",},},
+    {"id":{"name":"Game_Over","path":"rooms/Game_Over/Game_Over.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},},
     {"id":{"name":"All_sprites","path":"sprites/All_sprites/All_sprites.yy",},},
@@ -95,6 +96,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Game_Over","path":"rooms/Game_Over/Game_Over.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
