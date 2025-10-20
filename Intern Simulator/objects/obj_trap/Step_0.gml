@@ -9,7 +9,7 @@ if(_chao){
 		image_yscale = sign(velh);
 	}
 	if(pode_cair == false){
-		if(place_meeting(x+velh *15, y+1, obj_chao) == false){
+		if(place_meeting(x+velh *17, y+1, obj_chao) == false){
 			velh *= -1;
 		}
 	}

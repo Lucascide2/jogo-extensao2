@@ -97,6 +97,7 @@
     {"id":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
     {"id":{"name":"mg_modelo","path":"rooms/mg_modelo/mg_modelo.yy",},},
     {"id":{"name":"mg_tutorial","path":"rooms/mg_tutorial/mg_tutorial.yy",},},
+    {"id":{"name":"test","path":"rooms/test/test.yy",},},
     {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},},
     {"id":{"name":"sq_transicao_death","path":"scripts/sq_transicao_death/sq_transicao_death.yy",},},
     {"id":{"name":"All_sprites","path":"sprites/All_sprites/All_sprites.yy",},},
@@ -142,10 +143,11 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
-    {"roomId":{"name":"mg_tutorial","path":"rooms/mg_tutorial/mg_tutorial.yy",},},
     {"roomId":{"name":"Escritorio","path":"rooms/Escritorio/Escritorio.yy",},},
     {"roomId":{"name":"mg_modelo","path":"rooms/mg_modelo/mg_modelo.yy",},},
+    {"roomId":{"name":"mg_tutorial","path":"rooms/mg_tutorial/mg_tutorial.yy",},},
+    {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
+    {"roomId":{"name":"test","path":"rooms/test/test.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
