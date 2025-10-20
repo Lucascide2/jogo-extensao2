@@ -143,7 +143,7 @@ if (keyboard_check_pressed(ord("Z"))) {
 	// Checa se tem uma instancia de computador por perto
 	if (able_to_interact) {
 		
-		var player_pc = instance_place(x+7, y, obj_player_computer)
+		var player_pc = instance_place(x+10, y, obj_player_computer)
 		if (player_pc != noone) {
 			able_to_interact = false;
 
@@ -161,6 +161,14 @@ if (keyboard_check_pressed(ord("Z"))) {
 	
 
 
+} else if (keyboard_check_pressed(vk_escape)) { // Acessa o menu esc
+	if (able_to_interact) {
+		
+		obj_menu_esc.is_active = true
+		
+		able_to_interact = false
+		able_to_move = false
+	}
 }
 
 

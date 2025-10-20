@@ -1,12 +1,6 @@
-option_text = "Day 3"
+// Inherit the parent event
+event_inherited();
 
 is_available = false
-is_unlockable = false
-
-// Cálculos para obtenção das posições relativas dos objetos
-
-real_dif_x = x - 700;
-
-relative_x = real_dif_x / 600 * 1280
-
-relative_y = y / 340 * 780
+option_text = "day_3"
+level_text = "Day 3"
