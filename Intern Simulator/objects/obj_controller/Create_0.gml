@@ -72,4 +72,4 @@ if (!variable_global_exists("days_data")) {
 	on_test = true
 }
 
-	
+timer = 60 * 10;   // 60 FPS * 10 minutes * 60 seconds
