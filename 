@@ -1,0 +1,73 @@
+[33mcommit d6fe8fff6d6432f77e180566c0be5f873d0119ef[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Diogo <diogochaves.software@gmail.com>
+Date:   Sun Oct 19 13:57:45 2025 -0300
+
+    adicionando mecanicas de minigame
+
+[33mcommit 2e5d2c9bf085d989b328d44c2c23be656331d6f6[m
+Author: Diogo <diogochaves.software@gmail.com>
+Date:   Fri Oct 17 22:05:23 2025 -0300
+
+    adicionando mecanicas para plataforma
+
+[33mcommit b977b90beed413c26a8d34b41c7cfa8b3b0c822d[m
+Merge: 1827ad6 fe1a1d0
+Author: Diogo <diogochaves.software@gmail.com>
+Date:   Fri Oct 17 19:09:52 2025 -0300
+
+    fazendo o merge
+
+[33mcommit fe1a1d05adb87f6217e33bd804f8318dda4b4dd1[m
+Merge: 3797b9a 1713448
+Author: DiogoNasciment <diogochaves.software@gmail.com>
+Date:   Fri Oct 17 19:18:32 2025 -0300
+
+    adicionando lógica do minigame
+
+[33mcommit 1827ad6b0dbe5d786460202b6c49eaec54b47d9c[m
+Author: Diogo <diogochaves.software@gmail.com>
+Date:   Fri Oct 17 19:08:26 2025 -0300
+
+    modificando sprites
+
+[33mcommit 3797b9a9a5a65f71ba1c0f6a2225784f5741cfc4[m
+Author: DiogoNasciment <diogochaves.software@gmail.com>
+Date:   Fri Oct 17 15:58:25 2025 -0300
+
+    modificações
+
+[33mcommit 17134481797a915b55a950893dfae796684a692f[m
+Author: Lucascide2 <joao.cide@outlook.com>
+Date:   Thu Oct 16 22:04:34 2025 -0300
+
+    criando sprites
+
+[33mcommit 3accf547c40e738fda90b4349960fc898b9850a5[m
+Author: Lucascide2 <joao.cide@outlook.com>
+Date:   Thu Oct 16 20:52:49 2025 -0300
+
+    ajeitando movimentação
+
+[33mcommit a50f471623948cbed2b1c31f73c0be4237771f0d[m
+Author: Diogo <diogochaves.software@gmail.com>
+Date:   Thu Oct 16 19:42:15 2025 -0300
+
+    adicionando animação
+
+[33mcommit 5f7e1693554fdd8d655897cfc74eb65ad3446803[m
+Author: Lucascide2 <joao.cide@outlook.com>
+Date:   Tue Oct 14 21:55:20 2025 -0300
+
+    criando menu de opcoes
+
+[33mcommit ef989be75951df5489b1eaf90d041f0250064ab7[m
+Author: Lucascide2 <joao.cide@outlook.com>
+Date:   Sun Oct 5 19:54:06 2025 -0300
+
+    primeiro-commit
+
+[33mcommit f055c2fc6a6d5c6bda029c38881976209a753a8d[m
+Author: Lucas_dev <159859104+Lucascide2@users.noreply.github.com>
+Date:   Sun Oct 5 19:48:54 2025 -0300
+
+    Initial commit

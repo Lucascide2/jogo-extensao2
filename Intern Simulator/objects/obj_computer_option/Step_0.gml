@@ -13,7 +13,8 @@ if (obj_computer_screen.in_screen) {
 		
 		if (obj_computer_screen.obj_selected == object_index) {
 			if (keyboard_check_pressed(ord("Z"))) {
-				// Configurar início do minigame
+				keyboard_clear(ord("Z"))
+				room_goto(room_to_go)
 			}
 		}
 	}
