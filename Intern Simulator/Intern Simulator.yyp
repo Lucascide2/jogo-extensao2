@@ -133,11 +133,11 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
+    {"roomId":{"name":"Escritorio","path":"rooms/Escritorio/Escritorio.yy",},},
     {"roomId":{"name":"mg_tutorial","path":"rooms/mg_tutorial/mg_tutorial.yy",},},
     {"roomId":{"name":"mg_modelo","path":"rooms/mg_modelo/mg_modelo.yy",},},
-    {"roomId":{"name":"Escritorio","path":"rooms/Escritorio/Escritorio.yy",},},
     {"roomId":{"name":"mg_modelo","path":"rooms/mg_modelo/mg_modelo.yy",},},
+    {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
