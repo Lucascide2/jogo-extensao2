@@ -42,9 +42,13 @@ if (!moving and able_to_move) {
 		sprite_index = spr_player_walk_right
     }
 	
-	var check_place_meeting_furniture = place_meeting(target_x, target_y, obj_table)
-	var check_place_meeting_npc = place_meeting(target_x, target_y, obj_junior) or place_meeting(target_x, target_y, obj_pleno) or place_meeting(target_x, target_y, obj_senior)
-	var check_place_meeting =  check_place_meeting_furniture
+	
+	var tolerance_sup = 10
+	 
+	
+	var check_place_meeting_furniture = place_meeting(target_x, target_y, obj_colisor)
+	//var check_place_meeting_npc = place_meeting(target_x, target_y, obj_junior) or place_meeting(target_x, target_y, obj_pleno) or place_meeting(target_x, target_y, obj_senior)
+	var check_place_meeting =  check_place_meeting_furniture or target_y < 50
 	
 	if (check_place_meeting){
 		target_x = x;
@@ -56,7 +60,7 @@ if (!moving and able_to_move) {
 	if (target_x < sprite_width / 2) target_x = sprite_width / 2 ;
 	else if (target_y < sprite_height / 2) target_y = sprite_height / 2;
 	else if (target_x > room_width - sprite_width / 2) target_x = room_width - sprite_width / 2;
-	else if (target_y > room_height - sprite_height / 2) target_y = room_height - sprite_height / 2;
+	else if (target_y > room_height - sprite_height / 4) target_y = room_height - sprite_height / 4;
 	
 	
 	

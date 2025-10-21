@@ -1,16 +1,6 @@
+var data = load_json_file("dialogues.json")
 
-
-var json_text = file_text_open_read("dialogues.json"); 
-var content = ""; 
-while (!file_text_eof(json_text)) {
-	content += file_text_read_string(json_text); 
-	file_text_readln(json_text); 
-} 
-file_text_close(json_text); 
-
-var data = json_parse(content);
-
-
+on_test = false
 
 
 // FASES 1, 2, 3
@@ -45,7 +35,7 @@ for (var j=0; j < 3; j++) {
 
 	obj.dialogue_text = []
 
-	for (i=0; i < obj.num_dialogues; i++) {
+	for (var i=0; i < obj.num_dialogues; i++) {
 		array_push(obj.dialogue_text, generate_dialogue(json_obj.dialogue_text[i])) 
 	}
 
@@ -61,6 +51,25 @@ for (var j=0; j < 3; j++) {
 }
 
 
-obj_computer_option_1.is_unlockable = true
+obj = noone
 
+
+// Carregando configurações das dicas
+if (variable_global_exists("tips_data")) {
+	for (var i = 0; i < 8; i++) {
+		obj = asset_get_index("obj_computer_option_" + string(i + 1))
 	
+		if (global.tips_data[i] == 1) {
+			obj.is_unlockable = true
+		} else if (global.tips_data[i] == 2) {
+			obj.is_available = true
+		}
+
+	}
+}
+
+if (!variable_global_exists("days_data")) {
+	on_test = true
+}
+
+timer = 60 * 10;   // 60 FPS * 10 minutes * 60 seconds
