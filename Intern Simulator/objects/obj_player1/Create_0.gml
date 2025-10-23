@@ -11,6 +11,6 @@ dano = false;
 inputs = {
 	left: vk_left,
 	right: vk_right,
-	jump: vk_space
+	jump: vk_up
 }
 
