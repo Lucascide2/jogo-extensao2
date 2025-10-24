@@ -32,7 +32,13 @@ function calc_movement(){
 		//adicionando movimento ao jogador
 		x += velh;
 		y += velv;
+		
+		global.is_moving = true
+	} else {
+		global.is_moving = false
 	}
+	
+	
 	
 }
 
