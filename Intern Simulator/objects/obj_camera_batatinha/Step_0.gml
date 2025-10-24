@@ -2,6 +2,7 @@
 var player = obj_playerAlt; // substitua se o nome for diferente
 
 
+
 if (in_cutscene) {
 	timer_ms += delta_time
 	
@@ -16,6 +17,7 @@ if (in_cutscene) {
 	
 }
 
+show_debug_message(target_x)
 
 if (following && instance_exists(player)) {
     // Define a posição alvo da câmera (centro do jogador)
