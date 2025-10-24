@@ -1,3 +1,3 @@
-vel = 1.5
+vel = 1.75
 
 olhando = "right"
