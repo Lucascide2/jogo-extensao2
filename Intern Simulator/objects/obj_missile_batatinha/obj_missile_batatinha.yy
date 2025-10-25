@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_missile_batatinha",
-    "path":"sprites/spr_missile_batatinha/spr_missile_batatinha.yy",
+    "name":"spr_missile_batatinha_1",
+    "path":"sprites/spr_missile_batatinha_1/spr_missile_batatinha_1.yy",
   },
   "spriteMaskId":null,
   "visible":true,
