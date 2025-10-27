@@ -27,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_couch",
-    "path":"sprites/spr_couch/spr_couch.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
