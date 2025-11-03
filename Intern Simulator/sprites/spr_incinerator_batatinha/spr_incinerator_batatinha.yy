@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_incinerator_batatinha",
   "bboxMode":0,
   "bbox_bottom":41,
@@ -12,15 +12,15 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"f1b39add-24f0-47ac-a368-3f0c86645465","name":"f1b39add-24f0-47ac-a368-3f0c86645465","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"c7f0fcec-44e1-4727-87e3-1887b0f5db08","name":"c7f0fcec-44e1-4727-87e3-1887b0f5db08","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"826e54a6-ca14-44cc-a4b7-42fa0dd86e95","name":"826e54a6-ca14-44cc-a4b7-42fa0dd86e95","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"7fd024d2-c801-4d63-b07a-6506bc17b48e","name":"7fd024d2-c801-4d63-b07a-6506bc17b48e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"3522be9f-ad11-489c-858b-ed1835e9e115","name":"3522be9f-ad11-489c-858b-ed1835e9e115","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"602d8598-0219-41b4-8f47-4e1213f4c786","name":"602d8598-0219-41b4-8f47-4e1213f4c786","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"eb4eb624-38af-4d47-ba26-011d7cb5fc94","name":"eb4eb624-38af-4d47-ba26-011d7cb5fc94","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"42f4b97e-e478-4b5d-a6ef-14fa6691e9b5","name":"42f4b97e-e478-4b5d-a6ef-14fa6691e9b5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"983eec13-a6c1-444a-a9bd-805ee5030d0b","name":"983eec13-a6c1-444a-a9bd-805ee5030d0b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f1b39add-24f0-47ac-a368-3f0c86645465","name":"f1b39add-24f0-47ac-a368-3f0c86645465","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"c7f0fcec-44e1-4727-87e3-1887b0f5db08","name":"c7f0fcec-44e1-4727-87e3-1887b0f5db08","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"826e54a6-ca14-44cc-a4b7-42fa0dd86e95","name":"826e54a6-ca14-44cc-a4b7-42fa0dd86e95","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7fd024d2-c801-4d63-b07a-6506bc17b48e","name":"7fd024d2-c801-4d63-b07a-6506bc17b48e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"3522be9f-ad11-489c-858b-ed1835e9e115","name":"3522be9f-ad11-489c-858b-ed1835e9e115","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"602d8598-0219-41b4-8f47-4e1213f4c786","name":"602d8598-0219-41b4-8f47-4e1213f4c786","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"eb4eb624-38af-4d47-ba26-011d7cb5fc94","name":"eb4eb624-38af-4d47-ba26-011d7cb5fc94","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"42f4b97e-e478-4b5d-a6ef-14fa6691e9b5","name":"42f4b97e-e478-4b5d-a6ef-14fa6691e9b5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"983eec13-a6c1-444a-a9bd-805ee5030d0b","name":"983eec13-a6c1-444a-a9bd-805ee5030d0b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -78,33 +78,15 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f1b39add-24f0-47ac-a368-3f0c86645465","path":"sprites/spr_incinerator_batatinha/spr_incinerator_batatinha.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"5647e0ee-feb4-4263-8bc6-b41cb49f1f6e","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c7f0fcec-44e1-4727-87e3-1887b0f5db08","path":"sprites/spr_incinerator_batatinha/spr_incinerator_batatinha.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"eb86be0f-bca4-4a8a-8b43-9d5ea732df42","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"826e54a6-ca14-44cc-a4b7-42fa0dd86e95","path":"sprites/spr_incinerator_batatinha/spr_incinerator_batatinha.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"be932c72-f704-44f8-897c-b94ccf1824d1","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7fd024d2-c801-4d63-b07a-6506bc17b48e","path":"sprites/spr_incinerator_batatinha/spr_incinerator_batatinha.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"1471335e-8a03-49ca-b231-987c3ee9d1ea","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3522be9f-ad11-489c-858b-ed1835e9e115","path":"sprites/spr_incinerator_batatinha/spr_incinerator_batatinha.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"58f1ae89-bd6b-4c0e-9c05-0531c0895952","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"602d8598-0219-41b4-8f47-4e1213f4c786","path":"sprites/spr_incinerator_batatinha/spr_incinerator_batatinha.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"d95a2c06-01a2-41cb-8a85-8630531e49aa","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"eb4eb624-38af-4d47-ba26-011d7cb5fc94","path":"sprites/spr_incinerator_batatinha/spr_incinerator_batatinha.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"f56eb942-5848-449d-9639-79d624975fc4","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"42f4b97e-e478-4b5d-a6ef-14fa6691e9b5","path":"sprites/spr_incinerator_batatinha/spr_incinerator_batatinha.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"376b9a6f-e2b7-4bda-8f74-0e53bfe92d2a","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"983eec13-a6c1-444a-a9bd-805ee5030d0b","path":"sprites/spr_incinerator_batatinha/spr_incinerator_batatinha.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"27f1c8f8-c92f-4064-980f-5787346b461f","IsCreationKey":false,"Key":8.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"f1b39add-24f0-47ac-a368-3f0c86645465","path":"sprites/spr_incinerator_batatinha/spr_incinerator_batatinha.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"5647e0ee-feb4-4263-8bc6-b41cb49f1f6e","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"c7f0fcec-44e1-4727-87e3-1887b0f5db08","path":"sprites/spr_incinerator_batatinha/spr_incinerator_batatinha.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"eb86be0f-bca4-4a8a-8b43-9d5ea732df42","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"826e54a6-ca14-44cc-a4b7-42fa0dd86e95","path":"sprites/spr_incinerator_batatinha/spr_incinerator_batatinha.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"be932c72-f704-44f8-897c-b94ccf1824d1","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"7fd024d2-c801-4d63-b07a-6506bc17b48e","path":"sprites/spr_incinerator_batatinha/spr_incinerator_batatinha.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"1471335e-8a03-49ca-b231-987c3ee9d1ea","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"3522be9f-ad11-489c-858b-ed1835e9e115","path":"sprites/spr_incinerator_batatinha/spr_incinerator_batatinha.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"58f1ae89-bd6b-4c0e-9c05-0531c0895952","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"602d8598-0219-41b4-8f47-4e1213f4c786","path":"sprites/spr_incinerator_batatinha/spr_incinerator_batatinha.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"d95a2c06-01a2-41cb-8a85-8630531e49aa","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"eb4eb624-38af-4d47-ba26-011d7cb5fc94","path":"sprites/spr_incinerator_batatinha/spr_incinerator_batatinha.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"f56eb942-5848-449d-9639-79d624975fc4","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"42f4b97e-e478-4b5d-a6ef-14fa6691e9b5","path":"sprites/spr_incinerator_batatinha/spr_incinerator_batatinha.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"376b9a6f-e2b7-4bda-8f74-0e53bfe92d2a","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"983eec13-a6c1-444a-a9bd-805ee5030d0b","path":"sprites/spr_incinerator_batatinha/spr_incinerator_batatinha.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"27f1c8f8-c92f-4064-980f-5787346b461f","IsCreationKey":false,"Key":8.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

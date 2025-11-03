@@ -9,7 +9,10 @@
     "name":"Alt",
     "path":"folders/Objetos/Alt.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_colisores",
+    "path":"objects/obj_colisores/obj_colisores.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
