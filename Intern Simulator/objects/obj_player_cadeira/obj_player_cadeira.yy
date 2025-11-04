@@ -1,18 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_npc1",
+  "%Name":"obj_player_cadeira",
   "eventList":[],
   "managed":true,
-  "name":"obj_npc1",
+  "name":"obj_player_cadeira",
   "overriddenProperties":[],
   "parent":{
     "name":"Alt",
     "path":"folders/Objetos/Alt.yy",
   },
-  "parentObjectId":{
-    "name":"obj_npc",
-    "path":"objects/obj_npc/obj_npc.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_npc1",
-    "path":"sprites/spr_npc1/spr_npc1.yy",
+    "name":"spr_player_cadeira",
+    "path":"sprites/spr_player_cadeira/spr_player_cadeira.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -2,6 +2,7 @@
 
 var json_text, content, data, file;
 
+
 if (
 	!obj_junior.is_active and
 	!obj_pleno.is_active and
@@ -33,9 +34,13 @@ if (
 		}
 	}
 }
+
+
+/*
 if (timer > 0) {
     timer -= 1;
 } else {
     show_message("Game Over!"); 
     room_restart();
 }
+*/

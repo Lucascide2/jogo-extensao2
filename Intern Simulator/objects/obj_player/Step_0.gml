@@ -118,9 +118,9 @@ if (keyboard_check_pressed(ord("Z"))) {
 		for (var i = 0; i < qtd_npcs; i++) {
 			
 			
-			if (i == 0) obj = obj_junior
-			else if (i == 1) obj = obj_pleno
-			else if (i == 2) obj = obj_senior
+			if (i == 0) obj = obj_junior_
+			else if (i == 1) obj = obj_pleno_
+			else if (i == 2) obj = obj_senior_2
 		
 		
 			var npc = instance_place(x, y, obj)

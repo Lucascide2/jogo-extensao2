@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_npc5",
+  "%Name":"obj_pleno_",
   "eventList":[],
   "managed":true,
-  "name":"obj_npc5",
+  "name":"obj_pleno_",
   "overriddenProperties":[],
   "parent":{
-    "name":"Alt",
-    "path":"folders/Objetos/Alt.yy",
+    "name":"Objetos",
+    "path":"folders/Objetos.yy",
   },
   "parentObjectId":{
     "name":"obj_npc",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_npc3",
-    "path":"sprites/spr_npc3/spr_npc3.yy",
+    "name":"spr_pleno",
+    "path":"sprites/spr_pleno/spr_pleno.yy",
   },
   "spriteMaskId":null,
   "visible":true,

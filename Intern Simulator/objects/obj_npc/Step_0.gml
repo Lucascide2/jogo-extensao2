@@ -1,5 +1,5 @@
 if (start_dialogue) {
-	obj_player.able_to_move = false;
+	obj_playerAlt.able_to_move = false;
 	
 	// Checa se é necessário um input do usuário
 	if (dialogue_text[current_dialogue_index] == "<INPUT>") {
@@ -17,8 +17,8 @@ if (start_dialogue) {
 			
 			//is_active = true;
 			
-			obj_player.able_to_move = true
-			obj_player.able_to_interact = true
+			obj_playerAlt.able_to_move = true
+			obj_playerAlt.able_to_interact = true
 			
 			keyboard_clear(vk_escape)
 			
@@ -58,8 +58,8 @@ if (start_dialogue) {
 				start_dialogue = false;
 			
 				is_active = false;
-				obj_player.able_to_move = true
-				obj_player.able_to_interact = true
+				obj_playerAlt.able_to_move = true
+				obj_playerAlt.able_to_interact = true
 			}
 		
 			timer = 0;

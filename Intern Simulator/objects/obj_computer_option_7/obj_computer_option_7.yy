@@ -6,8 +6,8 @@
   "name":"obj_computer_option_7",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Old_used",
+    "path":"folders/Objetos/Old_used.yy",
   },
   "parentObjectId":{
     "name":"obj_computer_option",

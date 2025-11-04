@@ -6,8 +6,8 @@
   "name":"obj_pleno",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Alt",
+    "path":"folders/Objetos/Alt.yy",
   },
   "parentObjectId":{
     "name":"obj_npc",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_pleno",
-    "path":"sprites/spr_pleno/spr_pleno.yy",
+    "name":"spr_npc2",
+    "path":"sprites/spr_npc2/spr_npc2.yy",
   },
   "spriteMaskId":null,
   "visible":true,

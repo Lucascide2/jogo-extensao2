@@ -6,8 +6,8 @@
   "name":"obj_junior",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Alt",
+    "path":"folders/Objetos/Alt.yy",
   },
   "parentObjectId":{
     "name":"obj_npc",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_junior",
-    "path":"sprites/spr_junior/spr_junior.yy",
+    "name":"spr_npc1",
+    "path":"sprites/spr_npc1/spr_npc1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

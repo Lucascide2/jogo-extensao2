@@ -6,8 +6,8 @@
   "name":"obj_task",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Old_used",
+    "path":"folders/Objetos/Old_used.yy",
   },
   "parentObjectId":null,
   "persistent":false,

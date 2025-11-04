@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_npc2",
+  "%Name":"obj_senior_2",
   "eventList":[],
   "managed":true,
-  "name":"obj_npc2",
+  "name":"obj_senior_2",
   "overriddenProperties":[],
   "parent":{
-    "name":"Alt",
-    "path":"folders/Objetos/Alt.yy",
+    "name":"Objetos",
+    "path":"folders/Objetos.yy",
   },
   "parentObjectId":{
     "name":"obj_npc",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_npc2",
-    "path":"sprites/spr_npc2/spr_npc2.yy",
+    "name":"spr_senior",
+    "path":"sprites/spr_senior/spr_senior.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -6,8 +6,8 @@
   "name":"obj_senior",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Alt",
+    "path":"folders/Objetos/Alt.yy",
   },
   "parentObjectId":{
     "name":"obj_npc",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_senior",
-    "path":"sprites/spr_senior/spr_senior.yy",
+    "name":"spr_npc5",
+    "path":"sprites/spr_npc5/spr_npc5.yy",
   },
   "spriteMaskId":null,
   "visible":true,
