@@ -10,8 +10,8 @@
   "name":"obj_option_menu_esc_resume",
   "overriddenProperties":[],
   "parent":{
-    "name":"Old_used",
-    "path":"folders/Objetos/Old_used.yy",
+    "name":"Menu_Esc",
+    "path":"folders/Objetos/Old_used/Menu_Esc.yy",
   },
   "parentObjectId":null,
   "persistent":false,

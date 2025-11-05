@@ -1,18 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"obj_computer_option_7",
-  "eventList":[],
+  "%Name":"obj_controller_computer",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_computer_option_7",
+  "name":"obj_controller_computer",
   "overriddenProperties":[],
   "parent":{
     "name":"Computer",
     "path":"folders/Objetos/Old_used/Computer.yy",
   },
-  "parentObjectId":{
-    "name":"obj_computer_option",
-    "path":"objects/obj_computer_option/obj_computer_option.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,10 +31,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_computer_option_blocked",
-    "path":"sprites/spr_computer_option_blocked/spr_computer_option_blocked.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

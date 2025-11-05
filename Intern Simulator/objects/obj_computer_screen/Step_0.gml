@@ -1,10 +1,14 @@
-if (in_screen) {
+if (global.in_screen) {
 	// Sair da tela do computador
 	if (keyboard_check_pressed(vk_escape)) {
-		in_screen = false;
-		obj_camera_controller.following = true;
-		obj_player.able_to_move = true;
-		obj_player.able_to_interact = true;
+		global.in_screen = false;
+		global.leaving_computer = true
+		
+		// Alterar
+		room_goto(Office_2)
+		//obj_camera_controller.following = true;
+		//obj_player.able_to_move = true;
+		//obj_player.able_to_interact = true;
 		
 		keyboard_clear(vk_escape)
 	}

@@ -1,4 +1,4 @@
-if (obj_computer_screen.in_screen) {
+if (global.in_screen) {
 	if (is_available) {
 		sprite_index = spr_computer_option
 	

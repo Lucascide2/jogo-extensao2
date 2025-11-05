@@ -8,8 +8,8 @@
   "name":"obj_computer_option_1",
   "overriddenProperties":[],
   "parent":{
-    "name":"Old_used",
-    "path":"folders/Objetos/Old_used.yy",
+    "name":"Computer",
+    "path":"folders/Objetos/Old_used/Computer.yy",
   },
   "parentObjectId":{
     "name":"obj_computer_option",

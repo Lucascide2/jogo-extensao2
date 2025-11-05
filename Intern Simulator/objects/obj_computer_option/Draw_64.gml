@@ -1,4 +1,4 @@
-if (obj_computer_screen.in_screen and is_available) {
+if (global.in_screen and is_available) {
     draw_set_font(fnt_dialogue);
     draw_set_color(c_black);
 

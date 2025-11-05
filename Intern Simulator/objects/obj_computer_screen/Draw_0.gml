@@ -1,5 +1,5 @@
 draw_self()
-if (in_screen) {
+if (global.in_screen) {
 	draw_sprite(
 		spr_computer_selector,
 		0,

@@ -59,7 +59,28 @@
 
     },
     "day_3": {
-
+        "junior": {
+            "is_active": true,
+            "dialogue_text": [
+                "Olá, estagiário! =)",
+                "Me ajude a resolver essa demanda.",
+                "Eu gostaria de saber como visualizar as linhas da tabela alunos.",
+                "<INPUT>",
+                "Obrigada!"
+            ],
+            "correct_answer": "select"
+        },
+        "pleno": {
+            "is_active": false,
+            "dialogue_text": [
+            ],
+            "correct_answer": ""
+        },
+        "senior": {
+            "is_active": false,
+            "dialogue_text": [],
+            "correct_answer": ""
+        }
     },
     "day_4": {
 

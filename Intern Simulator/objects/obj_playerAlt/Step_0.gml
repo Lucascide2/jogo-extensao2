@@ -55,6 +55,9 @@ if (keyboard_check_pressed(ord("Z"))) {
 			y = 507
 			able_to_interact = false 
 			able_to_move = false
+			global.in_screen = true
+			room_goto(Computer)
+			
 			/*
 			able_to_interact = false;
 
@@ -70,11 +73,25 @@ if (keyboard_check_pressed(ord("Z"))) {
 	}
 }
 
-if (keyboard_check_pressed(vk_escape)) {
-	y = 540
-	
-	sprite_index = spr_playerAlt_idle_down
-	able_to_interact = true 
-	able_to_move = true
+if (global.leaving_computer) {
+	if (idx == 12) {
+		// 540 p/baixo ou 482 p/cima
+		//y = 482
+		able_to_interact = false 
+		able_to_move = false
+		x = 390
+		y = 507
+		idx = 0
+	}
+	if (idx < 10){
+		up += 1
+		calc_movement()
+		anim()
+		idx += 1
+	} else if (idx == 10) {
+		able_to_interact = true 
+		able_to_move = true
+		global.leaving_computer = false
+		idx = 12
+	}
 }
-

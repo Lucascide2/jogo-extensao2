@@ -54,22 +54,12 @@ for (var j=0; j < 3; j++) {
 obj = noone
 
 
-// Carregando configurações das dicas
-if (variable_global_exists("tips_data")) {
-	for (var i = 0; i < 8; i++) {
-		obj = asset_get_index("obj_computer_option_" + string(i + 1))
-	
-		if (global.tips_data[i] == 1) {
-			obj.is_unlockable = true
-		} else if (global.tips_data[i] == 2) {
-			obj.is_available = true
-		}
-
-	}
-}
-
 if (!variable_global_exists("days_data")) {
 	on_test = true
 }
 
 timer = 60 * 10;   // 60 FPS * 10 minutes * 60 seconds
+
+
+// Inicializando variáveis globais
+if (!variable_global_exists("leaving_computer")) global.leaving_computer = false
