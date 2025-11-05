@@ -6,8 +6,8 @@
   "name":"obj_pleno",
   "overriddenProperties":[],
   "parent":{
-    "name":"Alt",
-    "path":"folders/Objetos/Alt.yy",
+    "name":"npcs",
+    "path":"folders/Objetos/Alt/npcs.yy",
   },
   "parentObjectId":{
     "name":"obj_npc",

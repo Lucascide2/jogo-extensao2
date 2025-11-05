@@ -1,6 +1,6 @@
 {
   "$GMObject":"",
-  "%Name":"npc_que_anda",
+  "%Name":"obj_npc_que_anda",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
@@ -8,11 +8,11 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_playerAlt","path":"objects/obj_playerAlt/obj_playerAlt.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"npc_que_anda",
+  "name":"obj_npc_que_anda",
   "overriddenProperties":[],
   "parent":{
-    "name":"Alt",
-    "path":"folders/Objetos/Alt.yy",
+    "name":"npcs",
+    "path":"folders/Objetos/Alt/npcs.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -33,9 +33,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_pleno",
-    "path":"sprites/spr_pleno/spr_pleno.yy",
+    "name":"spr_npc7_run_right",
+    "path":"sprites/spr_npc7_run_right/spr_npc7_run_right.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_npc7_run_right",
+    "path":"sprites/spr_npc7_run_right/spr_npc7_run_right.yy",
+  },
   "visible":true,
 }

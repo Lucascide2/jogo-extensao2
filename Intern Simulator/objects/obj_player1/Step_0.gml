@@ -13,14 +13,14 @@ if(_chao){
 	}
 	
 	if(velh != 0){
-		image_xscale = 2*sign(velh)
+		image_xscale = 1.5*sign(velh)
 	}
 }
 else{
 	velv += grav;
 	
 	if(velh != 0){
-		image_xscale = 2*sign(velh)
+		image_xscale = 1.5*sign(velh)
 	}
 }
 

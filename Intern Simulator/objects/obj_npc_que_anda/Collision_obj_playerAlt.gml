@@ -1,4 +1,4 @@
-
+ 
 // --- DETECTAR COLISÃO COM PLAYER ---
 if (!is_active && status_conversa == 0) {
 	// Ativa o dialogo quando o player encosta
