@@ -7,7 +7,7 @@ obj_selected = obj_option_menu_esc_resume
 
 // Escala de conversão câmera -> Viewport
 scale_x = 1280/300
-scale_y = 780/170
+scale_y = 720/170
 
 // Centro do viewport
 x_center = display_get_gui_width() / 2;

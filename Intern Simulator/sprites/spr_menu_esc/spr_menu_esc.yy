@@ -2,7 +2,7 @@
   "$GMSprite":"v2",
   "%Name":"spr_menu_esc",
   "bboxMode":0,
-  "bbox_bottom":129,
+  "bbox_bottom":116,
   "bbox_left":0,
   "bbox_right":109,
   "bbox_top":0,

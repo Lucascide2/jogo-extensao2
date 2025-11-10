@@ -45,19 +45,16 @@ if (keyboard_check_pressed(ord("Z"))) {
 			able_to_move = false
 			global.in_screen = true
 			room_goto(Computer)
-			
-			/*
-			able_to_interact = false;
-
-			obj_camera_controller.following = false;
-			obj_camera_controller.target_x = 584 + 135; // mover para outro ponto, se quiser
-			obj_camera_controller.target_y = 0;
-		
-			obj_computer_screen.in_screen = true;
-			able_to_move = false;
-			*/
-		
 		}
+	}
+}
+
+if (keyboard_check_pressed(vk_escape)) { // Acessa o menu esc
+	if (able_to_interact) {
+		obj_menu_esc.is_active = true
+		
+		able_to_interact = false
+		able_to_move = false
 	}
 }
 

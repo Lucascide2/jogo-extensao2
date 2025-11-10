@@ -25,9 +25,9 @@
 	    spr_computer_selector, // sprite
 	    0,                     // subimagem
 	    x_center - 31*scale_x,    // posição X
-	    obj_selected.y_option- 11*scale_y,    // posição Y
+	    obj_selected.y_option- 12*scale_y,    // posição Y
 	    scale_x,                     // escala X (2x)
-	    scale_y,                     // escala Y (2x)
+	    scale_y+0.35,                     // escala Y (2x)
 	    0,                     // rotação
 	    c_white,               // cor
 	    1                      // opacidade

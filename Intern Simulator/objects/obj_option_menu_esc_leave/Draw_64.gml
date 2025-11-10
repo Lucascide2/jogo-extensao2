@@ -12,10 +12,10 @@ if (obj_menu_esc.is_active) {
 	    1                      // opacidade
 	);
 
-    draw_set_font(fnt_dialogue);
+    draw_set_font(fnt_dialogue_25);
     draw_set_color(c_black);
 	
-    draw_text(x_center - 65 , y_option - 10 , option_text);
+    draw_text(x_center - 80 , y_option - 15 , option_text);
 
     //draw_text(relative_x + 8 , relative_y + 35 , option_text);
     //draw_text(obj_computer_screen.x - 340, obj_computer_screen.y + 380, "sua");
