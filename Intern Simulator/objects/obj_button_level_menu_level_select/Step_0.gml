@@ -6,7 +6,7 @@ if (!obj_main_menu.in_main_menu) {
 			if (keyboard_check_pressed(ord("Z"))) {
 				global.level = option_text
 				// Alterar
-				room_goto(Office_2)
+				room_goto(Office_3)
 			}
 		}
 	}

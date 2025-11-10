@@ -5,7 +5,7 @@ if (global.in_screen) {
 		global.leaving_computer = true
 		
 		// Alterar
-		room_goto(Office_2)
+		room_goto(Office_3)
 		//obj_camera_controller.following = true;
 		//obj_player.able_to_move = true;
 		//obj_player.able_to_interact = true;
