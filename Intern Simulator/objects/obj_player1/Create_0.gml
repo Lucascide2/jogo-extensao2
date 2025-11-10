@@ -5,12 +5,14 @@ grav = 0.25;
 vel_jump = 7; 
 dano = false; 
 
+spawn_x = x;
+spawn_y = y;
 
 
 
 inputs = {
-	left: vk_left,
-	right: vk_right,
-	jump: vk_up
+	left: ord("A"),
+	right: ord("D"),
+	jump: vk_space
 }
 

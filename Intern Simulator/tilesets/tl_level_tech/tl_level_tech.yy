@@ -12,7 +12,7 @@
     "TileSerialiseData":[],
   },
   "name":"tl_level_tech",
-  "out_columns":9,
+  "out_columns":8,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
@@ -37,6 +37,6 @@
   "tilevsep":0,
   "tileWidth":32,
   "tilexoff":12,
-  "tileyoff":0,
-  "tile_count":81,
+  "tileyoff":20,
+  "tile_count":72,
 }

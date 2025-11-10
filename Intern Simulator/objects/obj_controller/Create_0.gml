@@ -60,6 +60,5 @@ if (!variable_global_exists("days_data")) {
 
 timer = 60 * 10;   // 60 FPS * 10 minutes * 60 seconds
 
-
 // Inicializando variáveis globais
 if (!variable_global_exists("leaving_computer")) global.leaving_computer = false
