@@ -28,5 +28,8 @@ var _armadilha = instance_place(x, y, obj_trap)
 
 if(_armadilha){
 	dano = true;
-	game_restart();
+	x = spawn_x;
+	y = spawn_y;
+	velh = 0
+	velv = 0;
 }

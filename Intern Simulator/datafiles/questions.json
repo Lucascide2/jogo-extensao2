@@ -1,0 +1,146 @@
+[
+  {
+    "fase": 1,
+    "sala": "Salão Principal da Empresa",
+    "titulo": "Bem-vindo à empresa!",
+    "descricao": "João acabou de chegar e um colega pede para listar todos os funcionários do departamento de Suporte.",
+    "pergunta": "____ nome, departamento FROM funcionarios ____ departamento = ____;",
+    "resposta": ["SELECT", "WHERE","Suporte"],
+    "conceitos": ["SELECT", "WHERE", "filtro textual"]
+  },
+  {
+    "fase": 1,
+    "sala": "Salão Principal da Empresa",
+    "titulo": "Aniversariantes de Março",
+    "descricao": "O RH pediu para João listar os funcionários que fazem aniversário em março, mostrando nome e data formatada.",
+    "pergunta": "SELECT nome, DATE_FORMAT(data_nascimento, '%d/%m') AS aniversario FROM funcionarios WHERE MONTH(data_nascimento) = ____;",
+    "resposta": ["3"],
+    "conceitos": ["funções de data", "formatação", "WHERE"]
+  },
+  {
+    "fase": 1,
+    "sala": "Salão Principal da Empresa",
+    "titulo": "Os mais antigos",
+    "descricao": "O gerente quer ver os 5 funcionários com maior tempo de casa.",
+    "pergunta": "SELECT nome, data_admissao FROM funcionarios ORDER BY data_admissao ____ LIMIT ____;",
+    "resposta": ["ASC", "5"],
+    "conceitos": ["ORDER BY", "LIMIT", "ordenamento crescente"]
+  },
+  {
+    "fase": 2,
+    "sala": "Salão Principal da Empresa",
+    "titulo": "Buscando um ID específico",
+    "descricao": "No salão principal, pedem para João encontrar o nome do funcionário com o ID 15.",
+    "pergunta": "SELECT nome FROM funcionarios WHERE id_funcionario = ____;",
+    "resposta": ["15"],
+    "conceitos": ["filtro exato", "WHERE"]
+  },
+  {
+    "fase": 2,
+    "sala": "Salão Principal da Empresa",
+    "titulo": "Funcionários por departamento",
+    "descricao": "Um colega pede para descobrir quantos funcionários existem em cada departamento.",
+    "pergunta": "SELECT departamento, COUNT(____) AS total FROM funcionarios GROUP BY ____;",
+    "resposta": ["*", "departamento"],
+    "conceitos": ["COUNT", "GROUP BY", "agregação"]
+  },
+  {
+    "fase": 2,
+    "sala": "Sala do Setor Financeiro",
+    "titulo": "Total de vendas por vendedor",
+    "descricao": "No setor financeiro, o chefe quer o total de vendas realizadas por cada vendedor.",
+    "pergunta": "SELECT id_vendedor, SUM(valor_venda) AS total_vendas FROM vendas GROUP BY ____;",
+    "resposta": ["id_vendedor"],
+    "conceitos": ["SUM", "GROUP BY", "agregação"]
+  },
+  {
+    "fase": 2,
+    "sala": "Sala do Setor Financeiro",
+    "titulo": "Relacionando vendedor e nome",
+    "descricao": "O chefe quer saber o nome do vendedor junto com o valor da venda.",
+    "pergunta": "SELECT v.id_venda, f.nome, v.valor_venda FROM vendas v ____ funcionarios f ____ v.id_vendedor = f.id_funcionario;",
+    "resposta": ["INNER JOIN", "ON"],
+    "conceitos": ["JOIN", "relacionamento de tabelas"]
+  },
+  {
+    "fase": 2,
+    "sala": "Sala do Setor Financeiro",
+    "titulo": "Vendas de alto valor",
+    "descricao": "Mostre todas as vendas acima de R$ 1000, ordenadas da maior para a menor.",
+    "pergunta": "SELECT * FROM vendas WHERE valor_venda ____ 1000 ORDER BY valor_venda ____;",
+    "resposta": [">", "DESC"],
+    "conceitos": ["WHERE", "comparação", "ORDER BY"]
+  },
+  {
+    "fase": 3,
+    "sala": "Sala do Setor de Inteligência",
+    "titulo": "Corrigindo dados de desempenho",
+    "descricao": "Durante uma análise de performance, João percebe que a meta mensal de Ingrid está incorreta e precisa ser ajustada para 75% do valor anterior para manter a integridade dos relatórios de BI.",
+    "pergunta": "UPDATE metas_mensais SET valor_meta = ____ WHERE nome = ____;",
+    "resposta": ["valor_meta * 0.75", "Ingrid"],
+    "conceitos": ["UPDATE", "SET", "WHERE", "integridade de dados"]
+  },
+  {
+    "fase": 3,
+    "sala": "Sala do Setor de Inteligência",
+    "titulo": "Quem ainda não vendeu",
+    "descricao": "O chefe quer saber quais vendedores ainda não realizaram nenhuma venda.",
+    "pergunta": "SELECT nome FROM ____ f WHERE id_funcionario NOT IN (SELECT id_vendedor FROM ____);",
+    "resposta": ["funcionarios", "vendas"],
+    "conceitos": ["subconsulta", "NOT IN", "filtragem negativa"]
+  },
+  {
+    "fase": 3,
+    "sala": "Sala do Setor de Inteligência",
+    "titulo": "Média por vendedor",
+    "descricao": "A equipe de inteligência quer a média de vendas por vendedor.",
+    "pergunta": "SELECT ____, ____(valor_venda) AS media_vendas FROM vendas GROUP BY ____;",
+    "resposta": ["nome", "AVG", "nome"],
+    "conceitos": ["AVG", "GROUP BY", "média"]
+  },
+  {
+    "fase": 3,
+    "sala": "Sala do Setor de Inteligência",
+    "titulo": "Apenas os melhores",
+    "descricao": "Mostre apenas os vendedores com média de vendas acima de 2000.",
+    "pergunta": "SELECT id_vendedor, AVG(valor_venda) AS media FROM vendas GROUP BY id_vendedor ____ AVG(____) > ____;",
+    "resposta": ["HAVING", "valor_venda", "2000"],
+    "conceitos": ["HAVING", "AVG", "filtragem pós-agrupamento"]
+  },
+  {
+    "fase": 3,
+    "sala": "Sala do Setor de Inteligência",
+    "titulo": "Máximos e mínimos",
+    "descricao": "A equipe quer saber o maior e o menor valor de venda.",
+    "pergunta": "SELECT ____(valor_venda) AS maior, ____(valor_venda) AS menor FROM ____;",
+    "resposta": ["MAX", "MIN", "vendas"],
+    "conceitos": ["MAX", "MIN", "funções agregadas"]
+  },
+  {
+    "fase": 3,
+    "sala": "Sala do Setor de Inteligência",
+    "titulo": "Comparativo entre departamentos",
+    "descricao": "Calcule a média de vendas por departamento com base no vendedor responsável, e mostre apenas departamentos com média acima de 5000.",
+    "pergunta": "SELECT f.departamento, AVG(v.valor_venda) AS media FROM vendas v ____ funcionarios f ON v.id_vendedor = f.id_funcionario GROUP BY f.departamento HAVING ____ > ____;",
+    "resposta": ["JOIN", "media", "5000"],
+    "conceitos": ["JOIN", "AVG", "HAVING", "GROUP BY"]
+  },
+  {
+    "fase": 4,
+    "sala": "Sala do Chefe",
+    "titulo": "Desafio Final: o teste do chefe",
+    "descricao": "O chefe desafia João a listar os nomes dos vendedores com média de vendas superior à média geral, ordenados da maior para a menor média.",
+    "pergunta": "SELECT f.nome, AVG(v.valor_venda) AS media_vendedor FROM ____ v JOIN funcionarios f ON v.id_vendedor = f.id_funcionario GROUP BY f.nome HAVING ____ > (SELECT AVG(____) FROM vendas) ORDER BY media_vendedor ____;",
+    "resposta": ["vendas", "media_vendedor", "valor_venda", "DESC"],
+    "conceitos": ["subconsulta", "JOIN", "HAVING", "ORDER BY", "AVG"]
+  },
+  {
+    "fase": 4,
+    "sala": "Sala do Chefe",
+    "titulo": "Bônus: relatório completo",
+    "descricao": "Como extra, João decide criar uma visão geral com vendedor, total, média e número de vendas.",
+    "pergunta": "SELECT f.nome, SUM(v.valor_venda) AS total, AVG(v.valor_venda) AS media, COUNT(v.id_venda) AS qtd_vendas FROM vendas v INNER JOIN funcionarios f ON v.id_vendedor = f.id_funcionario GROUP BY ____ ORDER BY total ____;",
+    "resposta": ["f.nome", "DESC"],
+    "conceitos": ["SUM", "AVG", "COUNT", "GROUP BY", "ORDER BY"]
+  }
+]
