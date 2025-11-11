@@ -1,3 +1,11 @@
+if (global.pause) {
+	show_debug_message("pausado")
+	image_speed = 0
+	exit
+} else {
+	image_speed = 1
+}
+
 if (start_dialogue) {
 	obj_playerAlt.able_to_move = false;
 	

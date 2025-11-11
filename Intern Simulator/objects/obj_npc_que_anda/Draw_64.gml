@@ -5,7 +5,7 @@ if (start_dialogue) {
     draw_set_color(make_color_rgb(30, 30, 30));
     draw_rectangle(150, 500, 1150, 700, false);
     // Texto
-    draw_set_font(fnt_dialogue_19);
+    draw_set_font(fnt_dialogue);
     draw_set_color(c_white);
     if (dialogue_text[current_dialogue_index] == "<INPUT>") {
         draw_text(200, 520, generate_dialogue("Digite sua resposta: " + input_text));

@@ -1,4 +1,11 @@
-var _chao = place_meeting(x, y+1, obj_chao)
+if (global.pause) {
+	image_speed = 0
+	exit
+} else {
+	image_speed = 1
+}
+
+ _chao = place_meeting(x, y+1, obj_chao)
 
 if(_chao){
 	

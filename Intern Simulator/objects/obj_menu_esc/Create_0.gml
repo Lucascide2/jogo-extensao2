@@ -1,4 +1,4 @@
-is_active = false
+global.pause = false
 
 option = 1
 num_options = 2

@@ -1,3 +1,10 @@
+if (global.pause) {
+	image_speed = 0
+	exit
+} else {
+	image_speed = 1
+}
+
 if (obj_playerAlt.x > ending_point) show_debug_message("Passou de fase") 
 else {
 	if (!is_looking) {

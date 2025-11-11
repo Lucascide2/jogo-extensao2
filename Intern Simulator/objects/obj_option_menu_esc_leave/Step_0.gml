@@ -1,4 +1,4 @@
-if (obj_menu_esc.is_active) {
+if (global.pause) {
 	//visible = true
 
 	if (obj_menu_esc.obj_selected == object_index) {

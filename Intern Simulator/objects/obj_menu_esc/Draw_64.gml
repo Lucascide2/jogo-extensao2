@@ -1,4 +1,4 @@
- if (is_active) {
+ if (global.pause) {
 	// Desenha o escurecimento da tela inteira
 	draw_set_color(c_black);
 	draw_set_alpha(0.6); // quanto maior, mais escuro (0 = invisível, 1 = opaco)

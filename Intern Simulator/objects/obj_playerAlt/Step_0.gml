@@ -1,5 +1,12 @@
 reset_variables();
 
+if (global.pause) {
+	image_speed = 0
+	exit
+} else {
+	image_speed = 1
+}
+
 
 if (able_to_move) {
 	input();
@@ -49,15 +56,7 @@ if (keyboard_check_pressed(ord("Z"))) {
 	}
 }
 
-if (keyboard_check_pressed(vk_escape)) { // Acessa o menu esc
-	if (able_to_interact) {
-		obj_menu_esc.is_active = true
-		
-		able_to_interact = false
-		able_to_move = false
-	}
-}
-
+if !variable_global_exists("leaving_computer") global.leaving_computer = false
 if (global.leaving_computer) {
 	if (idx == 12) {
 		// 540 p/baixo ou 482 p/cima

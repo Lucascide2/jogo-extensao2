@@ -1,4 +1,4 @@
-if (obj_menu_esc.is_active) {
+if (global.pause) {
 	
 	draw_sprite_ext(
 	    spr_option_menu_esc, // sprite
