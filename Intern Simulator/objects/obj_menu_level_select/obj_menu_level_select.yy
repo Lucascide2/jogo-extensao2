@@ -31,10 +31,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sprite_menu_level_select",
-    "path":"sprites/sprite_menu_level_select/sprite_menu_level_select.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
