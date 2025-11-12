@@ -32,8 +32,12 @@ if (start_dialogue) {
 			var inst_task = instance_nearest(x, y, obj_task);		
 			inst_task.visible = false;
 		} else {
+			var text_max_size = 180
+			if (string_length(keyboard_string)  > text_max_size) keyboard_string = string_copy(keyboard_string, 1, text_max_size)
+			show_debug_message(string_length(keyboard_string))
+				
 			var c = keyboard_string
-			input_text = c
+			input_text = string_trim(c) 
 		}
 		
 	} else {
