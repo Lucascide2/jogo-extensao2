@@ -1,10 +1,3 @@
-if (global.pause) {
-	show_debug_message("pausado")
-	image_speed = 0
-	exit
-} else {
-	image_speed = 1
-}
 
 if (start_dialogue) {
 	obj_playerAlt.able_to_move = false;
@@ -48,6 +41,7 @@ if (start_dialogue) {
 			timer += 1;
 			if (timer >= text_speed) {
 			    timer = 0;
+				show_debug_message(text_index)
 			    if (text_index < string_length(dialogue_text[current_dialogue_index])) {	
 			        text_index += 1;
 			        display_text = string_copy(dialogue_text[current_dialogue_index], 1, text_index);

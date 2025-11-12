@@ -12,3 +12,8 @@ function get_object_by_option(button_option) {
         default: return noone; // caso o id não exista
     }
 }
+
+
+if (instance_exists(obj_menu_esc)) {
+    with (obj_menu_esc) instance_destroy();
+}

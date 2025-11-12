@@ -8,7 +8,6 @@ if (in_main_menu) {
 	}
 	
 	if (has_pressed_key) {
-		show_debug_message(button_option)
 		current_button = get_object_by_option(button_option)
 		
 		obj_button_selector_main_menu.x = current_button.x-2

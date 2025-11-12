@@ -13,7 +13,10 @@
     "name":"Old_used",
     "path":"folders/Objetos/Old_used.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_pausable",
+    "path":"objects/obj_pausable/obj_pausable.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

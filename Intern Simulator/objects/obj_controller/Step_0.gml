@@ -20,7 +20,6 @@ if (
 			data = load_json_file("progress.json")
 			
 			data[$ "days"] = global.days_data
-			show_debug_message(global.days_data)
 			
 			json_text = json_stringify(data)
 			

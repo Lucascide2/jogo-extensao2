@@ -1,11 +1,13 @@
 reset_variables();
 
+/* Alterar
 if (global.pause) {
 	image_speed = 0
 	exit
 } else {
 	image_speed = 1
 }
+*/
 
 
 if (able_to_move) {
@@ -24,7 +26,6 @@ if (keyboard_check_pressed(ord("Z"))) {
 	if (able_to_interact) {
 	
 		var npc = instance_place(x, y, obj_npc)
-		if (npc == noone) show_debug_message(npc)
 		
 		if (npc != noone and npc.is_active) {
 				
@@ -44,7 +45,6 @@ if (keyboard_check_pressed(ord("Z"))) {
 
 		var player_pc = instance_place(x, y, obj_player_cadeira)
 		if (player_pc != noone) {
-			show_debug_message("Interagiu com o pc")
 			sprite_index = spr_playerAlt_idle_right
 			x = 390
 			y = 507

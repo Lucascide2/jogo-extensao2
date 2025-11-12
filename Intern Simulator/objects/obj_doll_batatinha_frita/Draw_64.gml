@@ -1,4 +1,4 @@
-var scale_x = (1080/350)
+var scale_x = (1280/350)
 var scale_y = (720/263)
 
 draw_sprite_ext(

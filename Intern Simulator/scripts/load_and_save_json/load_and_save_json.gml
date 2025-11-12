@@ -4,11 +4,10 @@ function load_json_file(file_name){
 	if (file_exists(game_save_id + file_name)) runtime_path = game_save_id + file_name
 	else runtime_path = file_name
 	
-	show_debug_message(runtime_path)
+	//show_debug_message(runtime_path)
 	
 	var json_text = file_text_open_read(runtime_path); 
 
-	show_debug_message(json_text)
 
 	var content = ""; 
 	while (!file_text_eof(json_text)) {

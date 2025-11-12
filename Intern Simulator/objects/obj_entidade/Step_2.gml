@@ -1,9 +1,4 @@
-if (global.pause) {
-	image_speed = 0
-	exit
-} else {
-	image_speed = 1
-}
+
 
 //colisão horizontal
 var _col = instance_place(x+velh, y, obj_chao)
