@@ -15,6 +15,7 @@ if (start_dialogue) {
 			current_dialogue_index = 0
 			start_dialogue = false;
 			in_input=false
+			display_text = ""
 			
 			//is_active = true;
 			
@@ -43,10 +44,19 @@ if (start_dialogue) {
 	} else {
 		if (!done) {
 			timer += 1;
+			
+			
+			if (keyboard_check_pressed(ord("Z"))) {
+				text_index = string_length(dialogue_text[current_dialogue_index]) - 1
+				timer = text_speed
+			} 
+			
+			
 			if (timer >= text_speed) {
 			    timer = 0;
 				show_debug_message(text_index)
-			    if (text_index < string_length(dialogue_text[current_dialogue_index])) {	
+			    if (text_index < string_length(dialogue_text[current_dialogue_index])) {
+					show_debug_message("aa")
 			        text_index += 1;
 			        display_text = string_copy(dialogue_text[current_dialogue_index], 1, text_index);
 			    } else {
@@ -71,6 +81,7 @@ if (start_dialogue) {
 			timer = 0;
 			done = false;
 			text_index = 0;
+			display_text = ""
 			
 			keyboard_clear(ord("Z"))
 		}	

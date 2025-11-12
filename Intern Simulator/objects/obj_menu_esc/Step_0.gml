@@ -1,3 +1,4 @@
+if (instance_exists(obj_playerAlt) and !obj_playerAlt.able_to_interact) exit
 
 if (keyboard_check_pressed(vk_escape) and !global.pause) { // Acessa o menu esc
 	if (surface_exists(application_surface)) {

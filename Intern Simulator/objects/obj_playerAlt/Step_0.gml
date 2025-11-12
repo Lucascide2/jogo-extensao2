@@ -35,7 +35,9 @@ if (keyboard_check_pressed(ord("Z"))) {
 				npc.start_dialogue = true;	
 			}
 				
-		}	
+		}
+		
+		keyboard_clear(ord("Z"))
 
 	}
 	
@@ -53,7 +55,11 @@ if (keyboard_check_pressed(ord("Z"))) {
 			global.in_screen = true
 			room_goto(Computer)
 		}
+		
+		keyboard_clear(ord("Z"))
 	}
+	
+	
 }
 
 if !variable_global_exists("leaving_computer") global.leaving_computer = false
