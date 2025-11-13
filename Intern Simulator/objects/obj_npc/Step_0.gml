@@ -35,7 +35,6 @@ if (start_dialogue) {
 		} else {
 			var text_max_size = 180
 			if (string_length(keyboard_string)  > text_max_size) keyboard_string = string_copy(keyboard_string, 1, text_max_size)
-			show_debug_message(string_length(keyboard_string))
 				
 			var c = keyboard_string
 			input_text = string_trim(c) 
@@ -54,9 +53,7 @@ if (start_dialogue) {
 			
 			if (timer >= text_speed) {
 			    timer = 0;
-				show_debug_message(text_index)
 			    if (text_index < string_length(dialogue_text[current_dialogue_index])) {
-					show_debug_message("aa")
 			        text_index += 1;
 			        display_text = string_copy(dialogue_text[current_dialogue_index], 1, text_index);
 			    } else {

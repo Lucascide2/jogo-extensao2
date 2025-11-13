@@ -22,4 +22,5 @@ tips_data = noone
 
 timer = 60 * 10;   // 60 FPS * 10 minutes * 60 seconds
 
-show_debug_message(game_save_id)
+// Progresso salvo do jogo fica aqui
+//show_debug_message(game_save_id)
