@@ -14,6 +14,13 @@ function get_object_by_option(button_option) {
 }
 
 
-if (instance_exists(obj_menu_esc)) {
-    with (obj_menu_esc) instance_destroy();
-}
+objs_destroy = [obj_menu_esc, obj_controller]
+for (var i = 0; i < array_length(objs_destroy); i++) {
+	if (instance_exists(objs_destroy[i])) {
+	    with (objs_destroy[i]) instance_destroy();
+	}
+} 
+
+
+
+if (!variable_global_exists("go_to_menu_level_select")) global.go_to_menu_level_select = false

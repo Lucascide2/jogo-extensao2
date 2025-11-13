@@ -12,21 +12,16 @@
             "correct_answer": "select"
         },
         "pleno": {
-            "is_active": true,
-            "dialogue_text": [
-                "Olá, estagiário! =)",
-                "Me ajude a resolver essa demanda.",
-                "Eu gostaria de saber como deletar as linhas da tabela alunos.",
-                "<INPUT>",
-                "Obrigado!"
-            ],
-            "correct_answer": "delete"
+            "is_active": false,
+            "dialogue_text": [],
+            "correct_answer": ""
         },
         "senior": {
             "is_active": false,
             "dialogue_text": [],
             "correct_answer": ""
-        }
+        },
+        "tips": [1, 1, 0, 0, 0 ,0 ,0 ,0]
     },
     "day_2": {
         "junior": {
@@ -55,8 +50,8 @@
                 "Obrigada!"
             ],
             "correct_answer": "select"
-        }
-
+        },
+        "tips": [2, 2, 1, 1, 0 ,0 ,0 ,0]
     },
     "day_3": {
         "junior": {
@@ -80,9 +75,26 @@
             "is_active": false,
             "dialogue_text": [],
             "correct_answer": ""
-        }
+        },
+        "tips": [2, 2, 2, 2, 1 ,1 ,0 ,0]
     },
     "day_4": {
-
+        "junior": {
+            "is_active": true,
+            "dialogue_text": ["Hollow knight :D"],
+            "correct_answer": ""
+        },
+        "pleno": {
+            "is_active": false,
+            "dialogue_text": [
+            ],
+            "correct_answer": ""
+        },
+        "senior": {
+            "is_active": false,
+            "dialogue_text": [],
+            "correct_answer": ""
+        },
+        "tips": [2, 2, 2, 2, 2 ,2 ,1 ,1]
     }
 }

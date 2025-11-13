@@ -74,6 +74,10 @@ if (start_dialogue) {
 				start_dialogue = false;
 			
 				is_active = false;
+				
+				// Diferença dos npcs_quest
+				if (object_exists(obj_controller)) obj_controller.active_npcs[? object_get_name(object_index)] = false 
+				
 				obj_playerAlt.able_to_move = true
 				obj_playerAlt.able_to_interact = true
 			}

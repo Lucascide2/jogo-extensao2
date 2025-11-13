@@ -18,3 +18,4 @@ input_text = ""
 correct_answer = "answer"
 in_input = false  // Variável que checa se o input já começou
 
+

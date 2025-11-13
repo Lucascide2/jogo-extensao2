@@ -156,6 +156,7 @@
     {"id":{"name":"Office_2","path":"rooms/Office_2/Office_2.yy",},},
     {"id":{"name":"Office_3","path":"rooms/Office_3/Office_3.yy",},},
     {"id":{"name":"Office","path":"rooms/Office/Office.yy",},},
+    {"id":{"name":"complete_mini_game","path":"scripts/complete_mini_game/complete_mini_game.yy",},},
     {"id":{"name":"load_and_save_json","path":"scripts/load_and_save_json/load_and_save_json.yy",},},
     {"id":{"name":"player_processes","path":"scripts/player_processes/player_processes.yy",},},
     {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},},

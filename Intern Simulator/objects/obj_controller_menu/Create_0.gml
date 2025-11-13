@@ -1,10 +1,6 @@
 var data = load_json_file("progress.json")
 
-
 days_data = data[$ "days"]
-tips_data = data[$ "tips"]
-
-
 
 obj = noone
 
@@ -14,9 +10,6 @@ for (var i = 0; i < 8; i++) {
 	obj.is_available = days_data[i]
 
 }
-
-// Carregando configurações das dicas
-global.tips_data = tips_data
 
 // Carregando configurações dos dias
 global.days_data = days_data
