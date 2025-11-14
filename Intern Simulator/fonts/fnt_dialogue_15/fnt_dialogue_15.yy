@@ -1,6 +1,6 @@
 {
   "$GMFont":"",
-  "%Name":"fnt_dialogue_26",
+  "%Name":"fnt_dialogue_15",
   "AntiAlias":0,
   "applyKerning":0,
   "ascender":20,
@@ -162,9 +162,9 @@
   "italic":false,
   "kerningPairs":[],
   "last":0,
-  "lineHeight":20,
+  "lineHeight":16,
   "maintainGms1Font":false,
-  "name":"fnt_dialogue_26",
+  "name":"fnt_dialogue_15",
   "parent":{
     "name":"Fontes",
     "path":"folders/Fontes.yy",

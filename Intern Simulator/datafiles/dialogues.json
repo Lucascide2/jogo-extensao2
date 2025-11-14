@@ -3,97 +3,102 @@
         "junior": {
             "is_active": true,
             "dialogue_text": [
-                "Olá, estagiário! =)",
-                "Me ajude a resolver essa demanda.",
-                "Eu gostaria de saber como visualizar as linhas da tabela alunos.",
+                "Liste todos os funcionários do departamento de Suporte.",
+                "____ nome, departamento FROM funcionarios ____ departamento = ____;",
                 "<INPUT>",
-                "Obrigada!"
+                "SELECT nome, departamento FROM funcionarios ____ departamento = ____;",
+                "<INPUT>",
+                "SELECT nome, departamento FROM funcionarios WHERE departamento = ____;",
+                "<INPUT>",
+                "Tamo junto parceiro!"
             ],
-            "correct_answer": "select"
+            "correct_answer": ["select", "where", "suporte"]
         },
         "pleno": {
             "is_active": false,
             "dialogue_text": [],
-            "correct_answer": ""
+            "correct_answer": []
         },
         "senior": {
             "is_active": false,
             "dialogue_text": [],
-            "correct_answer": ""
+            "correct_answer": []
         },
         "tips": [1, 1, 0, 0, 0 ,0 ,0 ,0]
     },
     "day_2": {
         "junior": {
-            "is_active": false,
-            "dialogue_text": [],
-            "correct_answer": ""
+            "is_active": true,
+            "dialogue_text": [
+                "Me ajude a encontrar o funcionário com id 15, por favor.",
+                "SELECT nome FROM funcionarios WHERE id_funcionario = ____;",
+                "<INPUT>",
+                "Obrigado!"                
+            ],
+            "correct_answer": ["15"]
         },
         "pleno": {
             "is_active": true,
             "dialogue_text": [
-                "Olá, estagiário! =)",
-                "Me ajude a resolver essa demanda.",
-                "Eu gostaria de saber como deletar as linhas da tabela alunos.",
+                "Forneça o total de vendas realizadas por cada vendedor",
+                "SELECT id_vendedor, SUM(valor_venda) AS total_vendas FROM vendas GROUP BY ____;",
                 "<INPUT>",
-                "Obrigado!"
+                "Obrigado!"                
             ],
-            "correct_answer": "delete"
+            "correct_answer": ["id_vendedor"]
         },
         "senior": {
-            "is_active": true,
-            "dialogue_text": [
-                "Olá, estagiário! =)",
-                "Me ajude a resolver essa demanda.",
-                "Eu gostaria de saber como visualizar as linhas da tabela alunos.",
-                "<INPUT>",
-                "Obrigada!"
-            ],
-            "correct_answer": "select"
+            "is_active": false,
+            "dialogue_text": [],
+            "correct_answer": []
         },
         "tips": [2, 2, 1, 1, 0 ,0 ,0 ,0]
     },
     "day_3": {
         "junior": {
             "is_active": true,
-            "dialogue_text": [
-                "Olá, estagiário! =)",
-                "Me ajude a resolver essa demanda.",
-                "Eu gostaria de saber como visualizar as linhas da tabela alunos.",
-                "<INPUT>",
-                "Obrigada!"
-            ],
-            "correct_answer": "select"
+            "dialogue_text": ["..."],
+            "correct_answer": []
         },
         "pleno": {
             "is_active": false,
-            "dialogue_text": [
-            ],
-            "correct_answer": ""
+            "dialogue_text": [],
+            "correct_answer": []
         },
         "senior": {
             "is_active": false,
             "dialogue_text": [],
-            "correct_answer": ""
+            "correct_answer": []
         },
         "tips": [2, 2, 2, 2, 1 ,1 ,0 ,0]
     },
     "day_4": {
         "junior": {
             "is_active": true,
-            "dialogue_text": ["Hollow knight :D"],
-            "correct_answer": ""
+            "dialogue_text": [
+                "Liste os nomes dos vendedores com média de vendas superior à média geral, ordenados da maior para a menor média.",
+                "SELECT f.nome, AVG(v.valor_venda) AS media_vendedor FROM ____ v JOIN funcionarios f ON v.id_vendedor = f.id_funcionario GROUP BY f.nome HAVING ____ > (SELECT AVG(____) FROM vendas) ORDER BY media_vendedor ____;",
+                "<INPUT>",
+                "SELECT f.nome, AVG(v.valor_venda) AS media_vendedor FROM vendas v JOIN funcionarios f ON v.id_vendedor = f.id_funcionario GROUP BY f.nome HAVING ____ > (SELECT AVG(____) FROM vendas) ORDER BY media_vendedor ____;",
+                "<INPUT>",
+                "SELECT f.nome, AVG(v.valor_venda) AS media_vendedor FROM vendas v JOIN funcionarios f ON v.id_vendedor = f.id_funcionario GROUP BY f.nome HAVING media_vendedor > (SELECT AVG(____) FROM vendas) ORDER BY media_vendedor ____;",    
+                "<INPUT>",
+                "SELECT f.nome, AVG(v.valor_venda) AS media_vendedor FROM vendas v JOIN funcionarios f ON v.id_vendedor = f.id_funcionario GROUP BY f.nome HAVING media_vendedor > (SELECT AVG(valor_venda) FROM vendas) ORDER BY media_vendedor ____;",    
+                "<INPUT>",
+                "Valeu estagiario!"
+            ],
+            "correct_answer": ["vendas", "media_vendedor", "valor_venda", "DESC"]
         },
         "pleno": {
             "is_active": false,
             "dialogue_text": [
             ],
-            "correct_answer": ""
+            "correct_answer": []
         },
         "senior": {
             "is_active": false,
             "dialogue_text": [],
-            "correct_answer": ""
+            "correct_answer": []
         },
         "tips": [2, 2, 2, 2, 2 ,2 ,1 ,1]
     }

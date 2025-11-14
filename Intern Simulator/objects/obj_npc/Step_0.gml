@@ -11,7 +11,7 @@ if (start_dialogue) {
 		
 		
 		if (keyboard_check_pressed(vk_escape)) {
-			
+			idx_answer = 0
 			current_dialogue_index = 0
 			start_dialogue = false;
 			in_input=false
@@ -25,13 +25,17 @@ if (start_dialogue) {
 			keyboard_clear(vk_escape)
 			
 			
-		} else if (keyboard_check_pressed(vk_enter) and input_text == correct_answer) {
+		} else if (keyboard_check_pressed(vk_enter) and string_lower(input_text) == correct_answer[idx_answer]) {
+			idx_answer += 1
 			current_dialogue_index += 1
 			display_text = ""
 			in_input = false
 			
-			var inst_task = instance_nearest(x, y, obj_task);		
-			inst_task.visible = false;
+			if (idx_answer == array_length(correct_answer)) {
+				var inst_task = instance_nearest(x, y, obj_task);		
+				inst_task.visible = false;
+			}
+
 		} else {
 			var text_max_size = 180
 			if (string_length(keyboard_string)  > text_max_size) keyboard_string = string_copy(keyboard_string, 1, text_max_size)

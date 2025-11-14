@@ -5,7 +5,7 @@ dialogue_text = [];         // Array de textos do npc.
 
 current_dialogue_index = 0  // Index do texto atual no array de diálogos
 num_dialogues = 0			// Tamanho do array de diálogos.
-
+idx_answer = 0              // Index que determina a resposta da vez
 
 display_text = "";			// Texto que deve aparecer na tela
 text_index = 0;				// Index atual do texto
@@ -15,7 +15,7 @@ done = false;				// Variável que determina se o texto todo já apareceu
 
 // Variáveis relacionadas ao input do usuário.
 input_text = ""
-correct_answer = "answer"
+correct_answer = []
 in_input = false  // Variável que checa se o input já começou
 
 

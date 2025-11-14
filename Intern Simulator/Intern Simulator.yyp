@@ -56,8 +56,8 @@
   },
   "name":"Intern Simulator",
   "resources":[
+    {"id":{"name":"fnt_dialogue_15","path":"fonts/fnt_dialogue_15/fnt_dialogue_15.yy",},},
     {"id":{"name":"fnt_dialogue_25","path":"fonts/fnt_dialogue_25/fnt_dialogue_25.yy",},},
-    {"id":{"name":"fnt_dialogue_26","path":"fonts/fnt_dialogue_26/fnt_dialogue_26.yy",},},
     {"id":{"name":"fnt_dialogue","path":"fonts/fnt_dialogue/fnt_dialogue.yy",},},
     {"id":{"name":"fnt_minigame","path":"fonts/fnt_minigame/fnt_minigame.yy",},},
     {"id":{"name":"fnt_time","path":"fonts/fnt_time/fnt_time.yy",},},
