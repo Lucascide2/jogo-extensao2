@@ -162,7 +162,7 @@
   "italic":false,
   "kerningPairs":[],
   "last":0,
-  "lineHeight":16,
+  "lineHeight":20,
   "maintainGms1Font":false,
   "name":"fnt_dialogue_15",
   "parent":{

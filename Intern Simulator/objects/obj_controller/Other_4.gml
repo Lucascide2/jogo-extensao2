@@ -1,6 +1,7 @@
 var data = load_json_file("dialogues.json")
 
 if (room == Office_3) {
+	
 	// FASES 1, 2, 3
 	if (variable_global_exists("level")) fase = global.level
 	else fase = "day_1"

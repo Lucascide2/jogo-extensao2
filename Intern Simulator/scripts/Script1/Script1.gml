@@ -39,6 +39,8 @@ function get_big_word_index(str_arr, line_length){
 	return "False"
 }
 
+
+
 function get_new_str_arr_formated(str_arr, idx ,line_length) {
 	var prev_idx = 0;
 	var aux_arr = []
@@ -49,8 +51,12 @@ function get_new_str_arr_formated(str_arr, idx ,line_length) {
 	}
 	
 
-	show_debug_message(array_slice_range(str_arr, idx+1, -1))
-	return array_concat(array_slice_range(str_arr, 0, idx), aux_arr, array_slice_range(str_arr, idx+1, -1)) 
+	//show_debug_message(array_slice_range(str_arr, idx+1, -1))
+	
+
+	if (idx != 0) return array_concat(array_slice_range(str_arr, 0, idx), aux_arr, array_slice_range(str_arr, idx+1, -1))
+	
+	 return array_concat(aux_arr, array_slice_range(str_arr, idx+1, -1))
 	
 }
 
@@ -61,10 +67,14 @@ function generate_dialogue(_text) {
     var line_length = 45;
 	var counter = 0
 	var new_text = ""
+	var aux_text = ""
 	
-	text_split = string_split(_text, " ")
+	// Gambiarra para lidar com quebra de linhas 
+	aux_text = string_replace_all(_text, "\n", " aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa ")
+	text_split = string_split(aux_text, " ")
 	
 	var idx = get_big_word_index(text_split, line_length);
+	
 	
 	while(idx != "False") {
 		text_split = get_new_str_arr_formated(text_split, idx, line_length)
@@ -90,8 +100,7 @@ function generate_dialogue(_text) {
 		}
 	}
 
-	//show_debug_message(string_join_compat("", text_split))
-    return string_join_compat("", text_split);
+    return string_replace_all(string_join_compat("", text_split), "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "");
 }
 
 /*

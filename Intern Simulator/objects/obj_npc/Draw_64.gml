@@ -11,11 +11,13 @@ if (start_dialogue) {
     draw_set_font(fnt_dialogue_15);
     draw_set_color(c_white);
 	
-    if (dialogue_text[current_dialogue_index] == "<INPUT>") {
+	
+     if (dialogue_text[current_dialogue_index] == "<INPUT>") {
         //draw_text(200, 520, generate_dialogue("Digite sua resposta: " + input_text));
-		
+	
 		var texto = generate_dialogue("Complete a lacuna "+ string(idx_answer + 1)+ ": " + input_text);
 		var linhas = string_split(texto, "\n");
+		
 
 		for (var i = 0; i < array_length(linhas); i++) {
 		    draw_text(x_, y_ + i * espaco, linhas[i]);

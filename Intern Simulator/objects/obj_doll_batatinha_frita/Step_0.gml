@@ -5,7 +5,12 @@ if (global.pause) {
 	image_speed = 1
 }
 
-if (obj_playerAlt.x > ending_point) show_debug_message("Passou de fase") 
+
+if (obj_playerAlt.x > ending_point) {
+	if room == batatinha_frita complete_mini_game(2)
+	else complete_mini_game(3)
+} 
+
 else {
 	if (!is_looking) {
 		timer_ms += delta_time

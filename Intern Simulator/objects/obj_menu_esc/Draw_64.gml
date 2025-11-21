@@ -52,7 +52,7 @@
 	);
 
     draw_set_font(fnt_dialogue_25);
-    draw_set_color(c_black);
+    draw_set_color(c_white);
 	
     draw_text(x_center - 95 , y_option_struct[? "Resume"] - 15 , "Resume");
 	draw_text(x_center - 80 , y_option_struct[? "Leave"] - 15 , "Leave");

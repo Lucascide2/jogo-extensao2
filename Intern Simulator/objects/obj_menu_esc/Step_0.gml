@@ -1,6 +1,6 @@
 if (instance_exists(obj_playerAlt) and !obj_playerAlt.able_to_interact) exit
 
-if (keyboard_check_pressed(vk_escape) and !global.pause) { // Acessa o menu esc
+if (keyboard_check_pressed(vk_escape) and !global.pause and !global.in_screen) { // Acessa o menu esc
 	if (surface_exists(application_surface)) {
 	    var surf_w = surface_get_width(application_surface);
 	    var surf_h = surface_get_height(application_surface);

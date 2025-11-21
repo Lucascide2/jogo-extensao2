@@ -13,7 +13,7 @@ if (room == Office_3) {
 		for (var i = 0; i < 8; i++) {
 			if fase == "day_" + string(i + 1) {
 			
-				if (i != 7) {
+				if (i != 3) {
 					global.days_data[i+1] += 1
 				}
 			

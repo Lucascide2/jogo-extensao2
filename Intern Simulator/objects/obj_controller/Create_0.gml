@@ -6,6 +6,7 @@ json_obj = noone
 
 fase = noone
 
+global.in_screen = false
 global.leaving_computer = false
 
 first_room_start = true
