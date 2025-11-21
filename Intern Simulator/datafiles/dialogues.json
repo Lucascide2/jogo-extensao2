@@ -4,7 +4,7 @@
             "is_active": true,
             "dialogue_text": [
                 "Liste todos os funcionários do departamento de Suporte.",
-                "____ nome, departamento FROM funcionarios ____ departamento = ____;",
+                "____ nome, departamento FROM funcionarios ____ departamento = ____",
                 "<INPUT>",
                 "SELECT nome, departamento FROM funcionarios ____ departamento = ____;",
                 "<INPUT>",
@@ -24,7 +24,7 @@
             "dialogue_text": [],
             "correct_answer": []
         },
-        "tips": [1, 1, 0, 0, 0 ,0 ,0 ,0]
+        "tips": [1, 0, 0, 0, 0 ,0 ,0 ,0]
     },
     "day_2": {
         "junior": {
@@ -52,13 +52,20 @@
             "dialogue_text": [],
             "correct_answer": []
         },
-        "tips": [2, 2, 1, 1, 0 ,0 ,0 ,0]
+        "tips": [2, 1, 0, 0, 0 ,0 ,0 ,0]
     },
     "day_3": {
         "junior": {
             "is_active": true,
-            "dialogue_text": ["..."],
-            "correct_answer": []
+            "dialogue_text": [
+                "A meta mensal de Ingrid está incorreta. Me ajuste a ajustar para 75% do valor anterior para manter a integridade dos relatórios de BI.",
+                "UPDATE metas_mensais SET valor_meta = ____ WHERE nome = ____;",
+                "<INPUT>",
+                "UPDATE metas_mensais SET valor_meta = 0.75 WHERE nome = ____;",
+                "<INPUT>",
+                "Obrigado!"
+            ],
+            "correct_answer": ["valor_meta*0.75", "ingrid" ]
         },
         "pleno": {
             "is_active": false,
@@ -70,7 +77,7 @@
             "dialogue_text": [],
             "correct_answer": []
         },
-        "tips": [2, 2, 2, 2, 1 ,1 ,0 ,0]
+        "tips": [2, 2, 1, 0, 0 ,0 ,0 ,0]
     },
     "day_4": {
         "junior": {
@@ -87,7 +94,7 @@
                 "<INPUT>",
                 "Valeu estagiario!"
             ],
-            "correct_answer": ["vendas", "media_vendedor", "valor_venda", "DESC"]
+            "correct_answer": ["vendas", "media_vendedor", "valor_venda", "desc"]
         },
         "pleno": {
             "is_active": false,
@@ -100,6 +107,6 @@
             "dialogue_text": [],
             "correct_answer": []
         },
-        "tips": [2, 2, 2, 2, 2 ,2 ,1 ,1]
+        "tips": [2, 2, 2, 1, 0 ,0 ,0 ,0]
     }
 }
