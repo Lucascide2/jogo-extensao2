@@ -4,15 +4,19 @@
             "is_active": true,
             "dialogue_text": [
                 "Liste todos os funcionários do departamento de Suporte.",
-                "____ nome, departamento FROM funcionarios ____ departamento = ____",
+                "____ nome, departamento FROM funcionarios ____ departamento = ____; <CODE>",
                 "<INPUT>",
-                "SELECT nome, departamento FROM funcionarios ____ departamento = ____;",
+                "SELECT nome, departamento FROM funcionarios ____ departamento = ____; <CODE>",
                 "<INPUT>",
-                "SELECT nome, departamento FROM funcionarios WHERE departamento = ____;",
+                "SELECT nome, departamento FROM funcionarios WHERE departamento = ____; <CODE>",
                 "<INPUT>",
                 "Tamo junto parceiro!"
             ],
-            "correct_answer": ["select", "where", "suporte"]
+            "correct_answer": [
+                "select",
+                "where",
+                "suporte"
+            ]
         },
         "pleno": {
             "is_active": false,
@@ -24,48 +28,73 @@
             "dialogue_text": [],
             "correct_answer": []
         },
-        "tips": [1, 0, 0, 0, 0 ,0 ,0 ,0]
+        "tips": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
     },
     "day_2": {
         "junior": {
             "is_active": true,
             "dialogue_text": [
                 "Me ajude a encontrar o funcionário com id 15, por favor.",
-                "SELECT nome FROM funcionarios WHERE id_funcionario = ____;",
+                "SELECT nome FROM funcionarios WHERE id_funcionario = ____; <CODE>",
                 "<INPUT>",
-                "Obrigado!"                
+                "Obrigado!"
             ],
-            "correct_answer": ["15"]
+            "correct_answer": [
+                "15"
+            ]
         },
         "pleno": {
             "is_active": true,
             "dialogue_text": [
                 "Forneça o total de vendas realizadas por cada vendedor",
-                "SELECT id_vendedor, SUM(valor_venda) AS total_vendas FROM vendas GROUP BY ____;",
+                "SELECT id_vendedor, SUM(valor_venda) AS total_vendas FROM vendas GROUP BY ____; <CODE>",
                 "<INPUT>",
-                "Obrigado!"                
+                "Obrigado!"
             ],
-            "correct_answer": ["id_vendedor"]
+            "correct_answer": [
+                "id_vendedor"
+            ]
         },
         "senior": {
             "is_active": false,
             "dialogue_text": [],
             "correct_answer": []
         },
-        "tips": [2, 1, 0, 0, 0 ,0 ,0 ,0]
+        "tips": [
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
     },
     "day_3": {
         "junior": {
             "is_active": true,
             "dialogue_text": [
                 "A meta mensal de Ingrid está incorreta. Me ajuste a ajustar para 75% do valor anterior para manter a integridade dos relatórios de BI.",
-                "UPDATE metas_mensais SET valor_meta = ____ WHERE nome = ____;",
+                "UPDATE metas_mensais SET valor_meta = ____ WHERE nome = ____; <CODE>",
                 "<INPUT>",
-                "UPDATE metas_mensais SET valor_meta = 0.75 WHERE nome = ____;",
+                "UPDATE metas_mensais SET valor_meta = 0.75 WHERE nome = ____; <CODE>",
                 "<INPUT>",
                 "Obrigado!"
             ],
-            "correct_answer": ["valor_meta*0.75", "ingrid" ]
+            "correct_answer": [
+                "valor_meta*0.75",
+                "ingrid"
+            ]
         },
         "pleno": {
             "is_active": false,
@@ -77,29 +106,42 @@
             "dialogue_text": [],
             "correct_answer": []
         },
-        "tips": [2, 2, 1, 0, 0 ,0 ,0 ,0]
+        "tips": [
+            2,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
     },
     "day_4": {
         "junior": {
             "is_active": true,
             "dialogue_text": [
                 "Liste os nomes dos vendedores com média de vendas superior à média geral, ordenados da maior para a menor média.",
-                "SELECT f.nome, AVG(v.valor_venda) AS media_vendedor FROM ____ v JOIN funcionarios f ON v.id_vendedor = f.id_funcionario GROUP BY f.nome HAVING ____ > (SELECT AVG(____) FROM vendas) ORDER BY media_vendedor ____;",
+                "SELECT f.nome, AVG(v.valor_venda) AS media_vendedor FROM ____ v JOIN funcionarios f ON v.id_vendedor = f.id_funcionario GROUP BY f.nome HAVING ____ > (SELECT AVG(____) FROM vendas) ORDER BY media_vendedor ____; <CODE>",
                 "<INPUT>",
-                "SELECT f.nome, AVG(v.valor_venda) AS media_vendedor FROM vendas v JOIN funcionarios f ON v.id_vendedor = f.id_funcionario GROUP BY f.nome HAVING ____ > (SELECT AVG(____) FROM vendas) ORDER BY media_vendedor ____;",
+                "SELECT f.nome, AVG(v.valor_venda) AS media_vendedor FROM vendas v JOIN funcionarios f ON v.id_vendedor = f.id_funcionario GROUP BY f.nome HAVING ____ > (SELECT AVG(____) FROM vendas) ORDER BY media_vendedor ____; <CODE>",
                 "<INPUT>",
-                "SELECT f.nome, AVG(v.valor_venda) AS media_vendedor FROM vendas v JOIN funcionarios f ON v.id_vendedor = f.id_funcionario GROUP BY f.nome HAVING media_vendedor > (SELECT AVG(____) FROM vendas) ORDER BY media_vendedor ____;",    
+                "SELECT f.nome, AVG(v.valor_venda) AS media_vendedor FROM vendas v JOIN funcionarios f ON v.id_vendedor = f.id_funcionario GROUP BY f.nome HAVING media_vendedor > (SELECT AVG(____) FROM vendas) ORDER BY media_vendedor ____; <CODE>",
                 "<INPUT>",
-                "SELECT f.nome, AVG(v.valor_venda) AS media_vendedor FROM vendas v JOIN funcionarios f ON v.id_vendedor = f.id_funcionario GROUP BY f.nome HAVING media_vendedor > (SELECT AVG(valor_venda) FROM vendas) ORDER BY media_vendedor ____;",    
+                "SELECT f.nome, AVG(v.valor_venda) AS media_vendedor FROM vendas v JOIN funcionarios f ON v.id_vendedor = f.id_funcionario GROUP BY f.nome HAVING media_vendedor > (SELECT AVG(valor_venda) FROM vendas) ORDER BY media_vendedor ____; <CODE>",
                 "<INPUT>",
                 "Valeu estagiario!"
             ],
-            "correct_answer": ["vendas", "media_vendedor", "valor_venda", "desc"]
+            "correct_answer": [
+                "vendas",
+                "media_vendedor",
+                "valor_venda",
+                "desc"
+            ]
         },
         "pleno": {
             "is_active": false,
-            "dialogue_text": [
-            ],
+            "dialogue_text": [],
             "correct_answer": []
         },
         "senior": {
@@ -107,6 +149,15 @@
             "dialogue_text": [],
             "correct_answer": []
         },
-        "tips": [2, 2, 2, 1, 0 ,0 ,0 ,0]
+        "tips": [
+            2,
+            2,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0
+        ]
     }
 }

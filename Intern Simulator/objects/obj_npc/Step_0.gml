@@ -2,6 +2,10 @@
 if (start_dialogue) {
 	obj_playerAlt.able_to_move = false;
 	
+	if ((string_pos("<CODE>", dialogue_text[current_dialogue_index]) > 0)) {
+		current_dialogue_index += 1
+	}
+	
 	// Checa se é necessário um input do usuário
 	if (dialogue_text[current_dialogue_index] == "<INPUT>") {
 		if (in_input == false) {
