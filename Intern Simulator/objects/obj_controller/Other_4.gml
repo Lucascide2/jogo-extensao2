@@ -9,22 +9,16 @@ if (room == Office_3) {
 	phase_data = data[$ fase]
 	
 	// 3 objetos de npc
-	for (var j=0; j < 3; j++) {
-		if (j == 0) {
-			obj = obj_junior
-			json_obj = phase_data.junior
-		} 
-		else if (j == 1) {
-
-			obj = obj_pleno
-			json_obj = phase_data.pleno
-		} 
-		else if (j == 2) {
-			obj = obj_senior
-			json_obj = phase_data.senior
-		}
+	for (var j=0; j < variable_struct_names_count(phase_data); j++) {
 		
+		var str_obj = variable_struct_get_names(phase_data)[j]
+		if str_obj == "tips" continue
+		
+		
+		obj = asset_get_index("obj_" + str_obj)
+		json_obj = phase_data[$ str_obj]
 		active_npc_key = object_get_name(obj)
+		
 	
 		if (first_room_start) {
 			active_npcs[? active_npc_key] = json_obj.is_active;
@@ -44,11 +38,8 @@ if (room == Office_3) {
 		obj.correct_answer = json_obj.correct_answer;
 
 		// Definindo a visibilidade de instancias
-		var inst_task = instance_nearest(obj.x, obj.y, obj_task);
 		if (obj.is_active) {
-		    inst_task.visible = true;
-		} else {
-			inst_task.visible = false;
+			obj.inst_task = instance_create_layer(obj.x - 8, obj.y - 27, "controllers", obj_task);
 		}
 		
 	

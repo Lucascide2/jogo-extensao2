@@ -11,14 +11,29 @@ if (obj_playerAlt.x > ending_point) {
 	else complete_mini_game(3)
 } 
 
-else {
+else if (start) {
 	if (!is_looking) {
 		timer_ms += delta_time
+		timer += delta_time
 	
+		text_speed = 0.92 * (not_looking_time/string_length(text) * 1000000) 
+
+		// Aparição da mensagem da batatinha frita	
+		if (timer >= text_speed) {
+			timer = 0
+			if (text_index < string_length(text)) {
+			    text_index += 1;
+			    display_text = string_copy(text, 1, text_index);
+			}
+		}
+
 	
 		if (timer_ms > not_looking_time * 1000000) {
 			timer_ms = 0		
 			is_looking = true
+			
+			display_text = ""
+			text_index = 1
 		
 			sprite_index = spr_player_idle_left
 		}

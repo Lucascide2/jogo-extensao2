@@ -18,4 +18,5 @@ input_text = ""
 correct_answer = []
 in_input = false  // Variável que checa se o input já começou
 
+inst_task = noone
 

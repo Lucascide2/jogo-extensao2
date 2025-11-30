@@ -12,3 +12,8 @@ draw_sprite_ext(
 	c_white,               // cor
 	1     
 )
+
+if (!is_looking){
+	draw_set_colour(c_white)
+	draw_text(75 * scale_x, 20*scale_y, display_text);
+}

@@ -28,6 +28,42 @@
             "dialogue_text": [],
             "correct_answer": []
         },
+        "npc4": {
+            "is_active": true,
+            "dialogue_text": [
+                "Liste todos os funcionários do departamento de Suporte.",
+                "____ nome, departamento FROM funcionarios ____ departamento = ____; <CODE>",
+                "<INPUT>",
+                "SELECT nome, departamento FROM funcionarios ____ departamento = ____; <CODE>",
+                "<INPUT>",
+                "SELECT nome, departamento FROM funcionarios WHERE departamento = ____; <CODE>",
+                "<INPUT>",
+                "Tamo junto parceiro!"
+            ],
+            "correct_answer": [
+                "select",
+                "where",
+                "suporte"
+            ]
+        },
+        "npc6": {
+            "is_active": true,
+            "dialogue_text": [
+                "Liste todos os funcionários do departamento de Suporte.",
+                "____ nome, departamento FROM funcionarios ____ departamento = ____; <CODE>",
+                "<INPUT>",
+                "SELECT nome, departamento FROM funcionarios ____ departamento = ____; <CODE>",
+                "<INPUT>",
+                "SELECT nome, departamento FROM funcionarios WHERE departamento = ____; <CODE>",
+                "<INPUT>",
+                "Tamo junto parceiro!"
+            ],
+            "correct_answer": [
+                "select",
+                "where",
+                "suporte"
+            ]
+        },
         "tips": [
             1,
             0,
@@ -148,6 +184,24 @@
             "is_active": false,
             "dialogue_text": [],
             "correct_answer": []
+        },
+        "npc6": {
+            "is_active": true,
+            "dialogue_text": [
+                "Calcule a média de vendas por departamento com base no vendedor responsável, e mostre apenas departamentos com média acima de 5000.",
+                "SELECT f.departamento, AVG(v.valor_venda) AS media FROM vendas v ____ funcionarios f ON v.id_vendedor = f.id_funcionario GROUP BY f.departamento HAVING ____ > ____; <CODE>",
+                "<INPUT>",
+                "SELECT f.departamento, AVG(v.valor_venda) AS media FROM vendas v JOIN funcionarios f ON v.id_vendedor = f.id_funcionario GROUP BY f.departamento HAVING ____ > ____; <CODE>",
+                "<INPUT>",
+                "SELECT f.departamento, AVG(v.valor_venda) AS media FROM vendas v JOIN funcionarios f ON v.id_vendedor = f.id_funcionario GROUP BY f.departamento HAVING media > ____; <CODE>",
+                "<INPUT>",
+                "Mandou bem!"
+            ],
+            "correct_answer": [
+                "join",
+                "media",
+                "5000"
+            ]
         },
         "tips": [
             2,

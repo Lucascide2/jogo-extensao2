@@ -36,7 +36,6 @@ if (start_dialogue) {
 			in_input = false
 			
 			if (idx_answer == array_length(correct_answer)) {
-				var inst_task = instance_nearest(x, y, obj_task);		
 				inst_task.visible = false;
 			}
 

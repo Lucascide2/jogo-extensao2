@@ -1,12 +1,18 @@
 
 if (room == Office_3) {
 	// Checando se a fase foi completa
-	var json_text, content, data, file;
+	var json_text, content, data, file, check = true;
+	
+	// Checando se todos os npcs da sala estão desativos
+	for (var i = 0; i < array_length(active_npcs_names); i ++) {
+		if (asset_get_index("obj_" + active_npcs_names[i]).is_active) {
+			check = false
+			break
+		}  
+	}
 	
 	if (
-		!obj_junior.is_active and
-		!obj_pleno.is_active and
-		!obj_senior.is_active and
+		check and
 		!on_test
 	) {
 
