@@ -29,40 +29,14 @@
             "correct_answer": []
         },
         "npc4": {
-            "is_active": true,
-            "dialogue_text": [
-                "Liste todos os funcionários do departamento de Suporte.",
-                "____ nome, departamento FROM funcionarios ____ departamento = ____; <CODE>",
-                "<INPUT>",
-                "SELECT nome, departamento FROM funcionarios ____ departamento = ____; <CODE>",
-                "<INPUT>",
-                "SELECT nome, departamento FROM funcionarios WHERE departamento = ____; <CODE>",
-                "<INPUT>",
-                "Tamo junto parceiro!"
-            ],
-            "correct_answer": [
-                "select",
-                "where",
-                "suporte"
-            ]
+            "is_active": false,
+            "dialogue_text": [],
+            "correct_answer": []
         },
         "npc6": {
-            "is_active": true,
-            "dialogue_text": [
-                "Liste todos os funcionários do departamento de Suporte.",
-                "____ nome, departamento FROM funcionarios ____ departamento = ____; <CODE>",
-                "<INPUT>",
-                "SELECT nome, departamento FROM funcionarios ____ departamento = ____; <CODE>",
-                "<INPUT>",
-                "SELECT nome, departamento FROM funcionarios WHERE departamento = ____; <CODE>",
-                "<INPUT>",
-                "Tamo junto parceiro!"
-            ],
-            "correct_answer": [
-                "select",
-                "where",
-                "suporte"
-            ]
+            "is_active": false,
+            "dialogue_text": [],
+            "correct_answer": []
         },
         "tips": [
             1,

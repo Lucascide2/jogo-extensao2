@@ -40,17 +40,21 @@ if (room == Office_3) {
 			}
 		}
 	}
+	
+	if (timer <= 0 and fase == "day_2" and !obj_pleno.start_dialogue) {
+		if (obj_pleno.y > 396) obj_pleno.y -= 2
+		else if (obj_pleno.x > 0) obj_pleno.x -= 2
+	}
 } else {
 	// Lógica caso seja em outra sala
 }
 
 
 
-/*
+
 if (timer > 0) {
     timer -= 1;
 } else {
-    show_message("Game Over!"); 
-    room_restart();
+    //show_message("Game Over!"); 
+    //room_restart();
 }
-*/
