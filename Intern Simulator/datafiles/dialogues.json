@@ -19,9 +19,16 @@
             ]
         },
         "pleno": {
-            "is_active": false,
-            "dialogue_text": [],
-            "correct_answer": []
+            "is_active": true,
+            "dialogue_text": [
+                "Liste os funcionários que fazem aniversário em março, mostrando nome e data formatada.",
+                "SELECT nome, DATE_FORMAT(data_nascimento, '%d/%m') AS aniversario FROM funcionarios WHERE MONTH(data_nascimento) = ____; <CODE>",
+                "<INPUT>",
+                "Valeu!"
+            ],
+            "correct_answer": [
+                "3"
+            ]
         },
         "senior": {
             "is_active": false,
@@ -112,9 +119,58 @@
             "correct_answer": []
         },
         "senior": {
-            "is_active": false,
-            "dialogue_text": [],
-            "correct_answer": []
+            "is_active": true,
+            "dialogue_text": [
+                "Gostaria que listasse o maior e o menor valor de venda realizados.",
+                "SELECT ____(valor_venda) AS maior, ____(valor_venda) AS menor FROM ____; <CODE>",
+                "<INPUT>",
+                "SELECT MAX(valor_venda) AS maior, ____(valor_venda) AS menor FROM ____; <CODE>",
+                "<INPUT>",
+                "SELECT MAX(valor_venda) AS maior, MIN(valor_venda) AS menor FROM ____; <CODE>",
+                "<INPUT>",
+                "Mandou bem!"
+            ],
+            "correct_answer": [
+                "max",
+                "min",
+                "vendas"
+            ]
+        },
+        "npc4": {
+            "is_active": true,
+            "dialogue_text": [
+                "Mostre apenas os vendedores com média de vendas acima de 2000.",
+                "SELECT id_vendedor, AVG(valor_venda) AS media FROM vendas GROUP BY id_vendedor ____ AVG(____) > ____; <CODE>",
+                "<INPUT>",
+                "SELECT id_vendedor, AVG(valor_venda) AS media FROM vendas GROUP BY id_vendedor HAVING AVG(____) > ____; <CODE>",
+                "<INPUT>",
+                "SELECT id_vendedor, AVG(valor_venda) AS media FROM vendas GROUP BY id_vendedor HAVING AVG(valor_venda) > ____; <CODE>",
+                "<INPUT>",
+                "Mandou bem!"
+            ],
+            "correct_answer": [
+                "having",
+                "valor_venda",
+                "2000"
+            ]
+        },
+        "npc6": {
+            "is_active": true,
+            "dialogue_text": [
+                "Liste a média de vendas por vendedor",
+                "SELECT ____, ____(valor_venda) AS media_vendas FROM vendas GROUP BY ____; <CODE>",
+                "<INPUT>",
+                "SELECT nome, ____(valor_venda) AS media_vendas FROM vendas GROUP BY ____; <CODE>",
+                "<INPUT>",
+                "SELECT nome, AVG(valor_venda) AS media_vendas FROM vendas GROUP BY ____: <CODE>",
+                "<INPUT>",
+                "Mandou bem!"
+            ],
+            "correct_answer": [
+                "nome",
+                "avg",
+                "nome"
+            ]
         },
         "tips": [
             2,
@@ -131,6 +187,9 @@
         "junior": {
             "is_active": true,
             "dialogue_text": [
+                "Olá estagiário, fiquei sabendo que você tem tido um bom desempenho até agora. Vamos ver se você está preparado para lidar com as tarefas de um efetivado.",
+                "Responda corretamente e você poderá se tornar um membro permanente da equipe!",
+                "Vamos lá!",
                 "Liste os nomes dos vendedores com média de vendas superior à média geral, ordenados da maior para a menor média.",
                 "SELECT f.nome, AVG(v.valor_venda) AS media_vendedor FROM ____ v JOIN funcionarios f ON v.id_vendedor = f.id_funcionario GROUP BY f.nome HAVING ____ > (SELECT AVG(____) FROM vendas) ORDER BY media_vendedor ____; <CODE>",
                 "<INPUT>",
@@ -140,13 +199,26 @@
                 "<INPUT>",
                 "SELECT f.nome, AVG(v.valor_venda) AS media_vendedor FROM vendas v JOIN funcionarios f ON v.id_vendedor = f.id_funcionario GROUP BY f.nome HAVING media_vendedor > (SELECT AVG(valor_venda) FROM vendas) ORDER BY media_vendedor ____; <CODE>",
                 "<INPUT>",
-                "Valeu estagiario!"
+                "EXCELENTE!!!",
+                "Agora o desafio final... Prepare-se!",
+                "Calcule a média de vendas por departamento com base no vendedor responsável, e mostre apenas departamentos com média acima de 5000.",
+                "SELECT f.departamento, AVG(v.valor_venda) AS media FROM vendas v ____ funcionarios f ON v.id_vendedor = f.id_funcionario GROUP BY f.departamento HAVING ____ > ____; <CODE>",
+                "<INPUT>",
+                "SELECT f.departamento, AVG(v.valor_venda) AS media FROM vendas v JOIN funcionarios f ON v.id_vendedor = f.id_funcionario GROUP BY f.departamento HAVING ____ > ____; <CODE>",
+                "<INPUT>",
+                "SELECT f.departamento, AVG(v.valor_venda) AS media FROM vendas v JOIN funcionarios f ON v.id_vendedor = f.id_funcionario GROUP BY f.departamento HAVING media > ____; <CODE>",
+                "<INPUT>",
+                "Todas as perguntas foram respondidas corretamente! Parabéns por se tornar um membro efetivo da equipe!"                
+
             ],
             "correct_answer": [
                 "vendas",
                 "media_vendedor",
                 "valor_venda",
-                "desc"
+                "desc",
+                "join",
+                "media",
+                "5000"
             ]
         },
         "pleno": {
@@ -160,22 +232,9 @@
             "correct_answer": []
         },
         "npc6": {
-            "is_active": true,
-            "dialogue_text": [
-                "Calcule a média de vendas por departamento com base no vendedor responsável, e mostre apenas departamentos com média acima de 5000.",
-                "SELECT f.departamento, AVG(v.valor_venda) AS media FROM vendas v ____ funcionarios f ON v.id_vendedor = f.id_funcionario GROUP BY f.departamento HAVING ____ > ____; <CODE>",
-                "<INPUT>",
-                "SELECT f.departamento, AVG(v.valor_venda) AS media FROM vendas v JOIN funcionarios f ON v.id_vendedor = f.id_funcionario GROUP BY f.departamento HAVING ____ > ____; <CODE>",
-                "<INPUT>",
-                "SELECT f.departamento, AVG(v.valor_venda) AS media FROM vendas v JOIN funcionarios f ON v.id_vendedor = f.id_funcionario GROUP BY f.departamento HAVING media > ____; <CODE>",
-                "<INPUT>",
-                "Mandou bem!"
-            ],
-            "correct_answer": [
-                "join",
-                "media",
-                "5000"
-            ]
+            "is_active": false,
+            "dialogue_text": [],
+            "correct_answer": []
         },
         "tips": [
             2,

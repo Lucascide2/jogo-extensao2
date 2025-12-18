@@ -102,6 +102,7 @@
     {"name":"inst_7F452128","path":"rooms/Office_3/Office_3.yy",},
     {"name":"inst_376B5EF8","path":"rooms/Office_3/Office_3.yy",},
     {"name":"inst_6D52D66C","path":"rooms/Office_3/Office_3.yy",},
+    {"name":"inst_475502D6","path":"rooms/Office_3/Office_3.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -109,6 +110,7 @@
     {"$GMRInstanceLayer":"","%Name":"controllers","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_3B3DDBCB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3B3DDBCB","objectId":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":521.0,"y":288.0,},
         {"$GMRInstance":"v4","%Name":"inst_6D52D66C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6D52D66C","objectId":{"name":"obj_menu_esc","path":"objects/obj_menu_esc/obj_menu_esc.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":736.0,"y":160.0,},
+        {"$GMRInstance":"v4","%Name":"inst_475502D6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_475502D6","objectId":{"name":"obj_setor_desbloqueado","path":"objects/obj_setor_desbloqueado/obj_setor_desbloqueado.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.2,"scaleY":0.2,"x":256.0,"y":352.0,},
       ],"layers":[],"name":"controllers","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"decoracao","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_E0292A0_1_1","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_E0292A0_1_1","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":0.60465115,"spriteId":{"name":"spr_divisoria_frente","path":"sprites/spr_divisoria_frente/spr_divisoria_frente.yy",},"x":421.0,"y":478.0,},

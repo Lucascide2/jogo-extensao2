@@ -39,7 +39,8 @@ if (room == Office_3) {
 
 		// Definindo a visibilidade de instancias
 		if (obj.is_active) {
-			obj.inst_task = instance_create_layer(obj.x - 8, obj.y - 27, "controllers", obj_task);
+			if (fase != "day_4") obj.inst_task = instance_create_layer(obj.x - 8, obj.y - 27, "controllers", obj_task);
+			else obj.inst_task = instance_create_layer(obj.x - 8, obj.y - 27, "controllers", obj_task_chefe);
 		}
 		
 	
@@ -52,9 +53,19 @@ if (room == Office_3) {
 
 	if(first_room_start) tips_data = phase_data.tips
 
+	if (fase == "day_2" or fase == "day_3" or fase == "day_4") {
+		obj_setor_desbloqueado.visible = true
+		
+		if (fase == "day_2") obj_setor_desbloqueado.sprite_index = spr_setor_debloqueado
+		else if (fase == "day_3") obj_setor_desbloqueado.sprite_index = spr_setor_inteligencia_desbloqueado
+		else if (fase == "day_4") obj_setor_desbloqueado.sprite_index = spr_chefe_desbloqueado
+	}
+
 	obj = noone
 	first_room_start = false
 }
+
+
 
 
 

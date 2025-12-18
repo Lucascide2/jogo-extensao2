@@ -41,6 +41,9 @@ if (room == Office_3) {
 		}
 	}
 	
+	if (timer <= 400 and (fase == "day_2" or fase == "day_3" or fase == "day_4")) {
+		obj_setor_desbloqueado.visible = false
+	}
 	if (timer <= 0 and fase == "day_2" and !obj_pleno.start_dialogue) {
 		if (obj_pleno.y > 396) obj_pleno.y -= 2
 		else if (obj_pleno.x > 0) obj_pleno.x -= 2

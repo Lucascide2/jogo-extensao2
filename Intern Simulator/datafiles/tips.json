@@ -18,8 +18,30 @@
         "------------------------------------------- \nDICAS IMPORTANTES\n-------------------------------------------\nSempre que usar COUNT ou SUM com colunas, e quiser separar os resultados por categorias, use GROUP BY.\nToda coluna exibida no SELECT que não for parte de uma função (COUNT, SUM, AVG...) deve aparecer no GROUP BY.\nCOUNT(*) é diferente de COUNT(coluna):\n    - COUNT(*) conta todas as linhas\n    - COUNT(coluna) ignora valores NULL",
         "RESUMO RÁPIDO\nCOUNT → conta registros\nSUM → soma valores\nGROUP BY → agrupa os resultados para calcular por categoria"
     ],
-    "tip3": [],
-    "tip4": [],
+    "tip3":[
+        "GUIA BÁSICO DE SQL (POSTGRESQL): UPDATE, AVG, HAVING, MIN E MAX\n\nAgora vamos aprender como atualizar dados, calcular médias, filtrar grupos e encontrar valores mínimos e máximos.\nEsses comandos ajudam a modificar informações e a fazer análises mais detalhadas dos dados.",
+        "------------------------------------------- \n1) USANDO UPDATE \n-------------------------------------------\n\nUPDATE é usado para modificar dados que já existem em uma tabela.\nÉ como dizer: “mude essa informação para um novo valor”.\n\nForma geral:\n                        UPDATE tabela SET coluna = valor WHERE condição\n\nExemplo:\nAtualizar a cidade de um cliente:\nUPDATE clientes SET cidade = 'Fortaleza' WHERE id = 3",
+        "Atualizar mais de uma coluna ao mesmo tempo:\nUPDATE clientes SET cidade = 'Recife', idade = 30 WHERE id = 5\n\nATENÇÃO:\nSe você não usar WHERE, TODOS os registros da tabela serão atualizados.",
+        "------------------------------------------- \n2) USANDO AVG( ) \n-------------------------------------------\n\nAVG calcula a média dos valores numéricos de uma coluna.\nÉ útil para saber a média de preços, idades, notas etc.\n\nForma geral:\n                        SELECT AVG(coluna) FROM tabela\n\nExemplo:\nCalcular a média de idade dos clientes:\nSELECT AVG(idade) FROM clientes",
+        "Calcular a média do valor das compras:\nSELECT AVG(valor) FROM compras",
+        "------------------------------------------- \n3) USANDO MIN( ) E MAX( ) \n-------------------------------------------\n\nMIN retorna o menor valor de uma coluna.\nMAX retorna o maior valor de uma coluna.\n\nForma geral:\n                        SELECT MIN(coluna), MAX(coluna) FROM tabela\n\nExemplo:\nMenor e maior idade dos clientes:\nSELECT MIN(idade), MAX(idade) FROM clientes",
+        "Exemplo com valores de compra:\nMaior valor de compra realizado:\nSELECT MAX(valor) FROM compras\n\nMenor valor de compra realizado:\nSELECT MIN(valor) FROM compras",
+        "------------------------------------------- \n4) INTRODUÇÃO AO HAVING \n-------------------------------------------\n\nHAVING é usado para filtrar resultados depois do GROUP BY.\nEnquanto o WHERE filtra linhas, o HAVING filtra grupos.\n\nForma geral:\n                        SELECT coluna, função FROM tabela GROUP BY coluna HAVING condição\n\nExemplo:\nMostrar apenas cidades com mais de 5 clientes:\nSELECT cidade, COUNT(*) FROM clientes GROUP BY cidade HAVING COUNT(*) > 5",
+        "Exemplo com média:\nMostrar clientes cuja média de compras seja maior que 100:\nSELECT id_cliente, AVG(valor) FROM compras GROUP BY id_cliente HAVING AVG(valor) > 100",
+        "------------------------------------------- \nDICAS IMPORTANTES\n-------------------------------------------\nUPDATE sempre deve ser usado com cuidado e, de preferência, com WHERE.\nAVG, MIN e MAX ignoram valores NULL.\nHAVING só faz sentido quando usado junto com GROUP BY.\nWHERE filtra antes do agrupamento, HAVING filtra depois.",
+        "RESUMO RÁPIDO\nUPDATE → atualiza dados\nAVG → calcula média\nMIN → menor valor\nMAX → maior valor\nHAVING → filtra resultados agrupados"
+    ],
+    "tip4": [
+        "GUIA BÁSICO DE SQL (POSTGRESQL): JOIN\n\nAgora vamos aprender como juntar dados de duas tabelas usando JOIN.\nJOIN é usado quando as informações estão separadas em tabelas diferentes, mas possuem relação entre si.",
+        "------------------------------------------- \n1) O QUE É JOIN \n-------------------------------------------\n\nJOIN serve para combinar registros de duas tabelas.\nEssa combinação acontece por meio de colunas relacionadas.\n\nNormalmente usamos uma chave estrangeira para fazer essa ligação.",
+        "Forma geral:\n                        SELECT colunas FROM tabela1 JOIN tabela2 ON condição\n\nA condição do ON indica como as tabelas se relacionam.",
+        "------------------------------------------- \n2) JOIN NA PRÁTICA \n-------------------------------------------\n\nSuponha duas tabelas:\n- funcionarios (id_funcionario, nome)\n- vendas (id_vendedor, valor_venda)\n\nA coluna id_vendedor da tabela vendas se relaciona com id_funcionario da tabela funcionarios.",
+        "Exemplo:\nListar o nome do funcionário junto com o valor da venda:\nSELECT funcionarios.nome, vendas.valor_venda FROM vendas JOIN funcionarios ON vendas.id_vendedor = funcionarios.id_funcionario",
+        "------------------------------------------- \n3) USANDO ALIAS COM JOIN \n-------------------------------------------\n\nAlias são apelidos dados às tabelas para facilitar a escrita da consulta.\nEles não alteram o resultado, apenas deixam o código mais curto.",
+        "Exemplo com alias:\nSELECT f.nome, v.valor_venda FROM vendas v JOIN funcionarios f ON v.id_vendedor = f.id_funcionario",
+        "------------------------------------------- \nDICAS IMPORTANTES\n-------------------------------------------\nJOIN mostra apenas os registros que possuem correspondência nas duas tabelas.\nSempre confira se a condição do ON está correta.\nAlias ajudam a evitar nomes longos e deixam o código mais legível.",
+        "RESUMO RÁPIDO\nJOIN → junta dados de duas tabelas\nON → define a relação entre as tabelas\nAlias → apelidos para tabelas"
+    ],
     "tip5": [],
     "tip6": [],
     "tip7": [],
