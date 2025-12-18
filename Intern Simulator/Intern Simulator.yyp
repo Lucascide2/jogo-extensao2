@@ -248,6 +248,7 @@
     {"id":{"name":"spr_sensor","path":"sprites/spr_sensor/spr_sensor.yy",},},
     {"id":{"name":"spr_setor_debloqueado","path":"sprites/spr_setor_debloqueado/spr_setor_debloqueado.yy",},},
     {"id":{"name":"spr_setor_inteligencia_desbloqueado","path":"sprites/spr_setor_inteligencia_desbloqueado/spr_setor_inteligencia_desbloqueado.yy",},},
+    {"id":{"name":"spr_sheet_npc_pleno","path":"sprites/spr_sheet_npc_pleno/spr_sheet_npc_pleno.yy",},},
     {"id":{"name":"spr_sheet_npc10","path":"sprites/spr_sheet_npc10/spr_sheet_npc10.yy",},},
     {"id":{"name":"spr_sheet_npc11","path":"sprites/spr_sheet_npc11/spr_sheet_npc11.yy",},},
     {"id":{"name":"spr_sheet_npc12","path":"sprites/spr_sheet_npc12/spr_sheet_npc12.yy",},},
