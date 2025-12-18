@@ -112,9 +112,9 @@
     {"name":"inst_72878434","path":"rooms/Office_3/Office_3.yy",},
     {"name":"inst_DA7AC00","path":"rooms/Office_3/Office_3.yy",},
     {"name":"inst_2D9F2BF9","path":"rooms/Office_3/Office_3.yy",},
-    {"name":"inst_29087D98","path":"rooms/Office_3/Office_3.yy",},
     {"name":"inst_123A06E1","path":"rooms/Office_3/Office_3.yy",},
     {"name":"inst_3F0B2B06","path":"rooms/Office_3/Office_3.yy",},
+    {"name":"inst_29087D98","path":"rooms/Office_3/Office_3.yy",},
   ],
   "isDnd":false,
   "layers":[

@@ -1,23 +1,47 @@
-{
+    {
     "tip1": [
-        "GUIA BÁSICO DE SQL (POSTGRESQL): SELECT E WHERE \n\nO comando SELECT é a base das consultas SQL. Ele serve para buscar dados de uma tabela. Pense nele como: “quero ver estas informações”. \n\nForma geral:\n\n                        SELECT colunas FROM tabela \n\nImagine uma tabela chamada clientes, com as colunas: id, nome, idade e cidade.",
-        "------------------------------------------- \n1) USANDO SELECT \n-------------------------------------------\n\nSelecionar todas as colunas: \n\nSELECT * FROM clientes \n\nSelecionar colunas específicas: \n\nSELECT nome, idade FROM clientes \n\nRenomear colunas: \n\nSELECT nome AS nome_cliente, idade AS anos FROM clientes ",
-        "2) ADICIONANDO O WHERE \nA cláusula WHERE serve para filtrar dados. É como dizer: “quero ver estes dados, mas somente quando esta condição for verdadeira”. \n\nForma geral:\n\n                        SELECT colunas FROM tabela WHERE condição \n\nFiltrar por um valor exato: \n\n                        SELECT nome, idade FROM clientes WHERE idade = 30",
-        "Filtrar valores maiores ou menores: \n\nSELECT nome, idade FROM clientes WHERE idade > 18\n\nFiltrar por texto: \n\nSELECT * FROM clientes WHERE cidade = 'São Paulo' \n\nUsar mais de uma condição (AND e OR): \n\nSELECT nome, idade, cidade FROM clientes WHERE idade > 18 AND cidade = 'Rio de Janeiro' \n\nSELECT nome FROM clientes WHERE cidade = 'Curitiba' OR cidade = 'Florianópolis'",
-        "Buscar padrões com LIKE: \n\nSELECT nome FROM clientes WHERE nome LIKE 'A%' ",
-        "RESUMO RÁPIDO \nSELECT → escolhe as colunas FROM → indica a tabela WHERE → filtra os resultados "
+        "GUIA BÁSICO DE SQL (POSTGRESQL): SELECT E WHERE\n\nO comando SELECT é a base das consultas SQL. Ele serve para buscar dados de uma tabela. Pense nele como: “quero ver estas informações”.\n\nForma geral:\n\n                        SELECT colunas FROM tabela\n\nImagine uma tabela chamada clientes, com as colunas: id, nome, idade e cidade.",
+
+        "------------------------------------------- \n1) USANDO SELECT \n-------------------------------------------\n\nSelecionar todas as colunas:\n\nSELECT * FROM clientes\n\nSelecionar colunas específicas:\n\nSELECT nome, idade FROM clientes\n\nRenomear colunas:\n\nSELECT nome AS nome_cliente, idade AS anos FROM clientes",
+
+        "------------------------------------------- \n2) ADICIONANDO O WHERE \n-------------------------------------------\n\nA cláusula WHERE serve para filtrar dados.\nÉ como dizer: “quero ver estes dados, mas somente quando esta condição for verdadeira”.\n\nForma geral:\n\n                        SELECT colunas FROM tabela WHERE condição\n\nFiltrar por um valor exato:\n\nSELECT nome, idade FROM clientes WHERE idade = 30",
+
+        "Filtrar valores maiores ou menores:\n\nSELECT nome, idade FROM clientes WHERE idade > 18\n\nFiltrar por texto:\n\nSELECT * FROM clientes WHERE cidade = 'São Paulo'\n\nUsar mais de uma condição (AND e OR):\n\nSELECT nome, idade, cidade FROM clientes WHERE idade > 18 AND cidade = 'Rio de Janeiro'\n\nSELECT nome FROM clientes WHERE cidade = 'Curitiba' OR cidade = 'Florianópolis'",
+
+        "------------------------------------------- \n3) BUSCANDO PADRÕES COM LIKE \n-------------------------------------------\n\nO operador LIKE é usado para buscar textos que seguem um padrão.\nEle é muito útil quando você não sabe o valor completo do texto.\n\nLIKE usa caracteres curinga:\n\n    %  → representa qualquer quantidade de caracteres\n    _  → representa um único caractere",
+
+        "Exemplos:\n\nBuscar nomes que começam com a letra A:\nSELECT nome FROM clientes WHERE nome LIKE 'A%'\n\nBuscar nomes que terminam com \"son\":\nSELECT nome FROM clientes WHERE nome LIKE '%son'\n\nBuscar nomes que contêm \"an\" em qualquer posição:\nSELECT nome FROM clientes WHERE nome LIKE '%an%'\n\nBuscar nomes com exatamente 5 letras, começando com A:\nSELECT nome FROM clientes WHERE nome LIKE 'A____'",
+
+        "------------------------------------------- \nRESUMO RÁPIDO \n-------------------------------------------\nSELECT → escolhe as colunas\nFROM → indica a tabela\nWHERE → filtra os resultados\nLIKE → busca padrões em textos"
     ],
     "tip2": [
-        "GUIA BÁSICO DE SQL (POSTGRESQL): COUNT, SUM E GROUP BY\n\nAgora vamos aprender como fazer cálculos e agrupamentos usando COUNT, SUM e GROUP BY.\nEsses comandos permitem responder perguntas como: “quantos registros existem?” ou “qual é o total por categoria?”.",
+        "GUIA BÁSICO DE SQL (POSTGRESQL): COUNT, SUM, GROUP BY E ORDER BY\n\nAgora vamos aprender como fazer cálculos, agrupamentos e ordenações usando COUNT, SUM, GROUP BY e ORDER BY.\nEsses comandos permitem responder perguntas como: “quantos registros existem?”, “qual é o total por categoria?” e “como organizar os resultados?”.",
+
         "------------------------------------------- \n1) USANDO COUNT( ) \n-------------------------------------------\n\nCOUNT conta quantos registros existem. É como perguntar: “quantos itens tenho aqui?”.\n\nForma geral:\n                        SELECT COUNT(coluna) FROM tabela\n\nExemplos:\n\nContar todos os clientes:\nSELECT COUNT(*) FROM clientes",
+
         "Contar quantos clientes têm cidade cadastrada:\nSELECT COUNT(cidade) FROM clientes",
+
         "------------------------------------------- \n2) USANDO SUM( ) \n-------------------------------------------\n\nSUM soma valores numéricos de uma coluna.\nÉ útil para somar preços, quantidades, idades etc.\n\nForma geral:\n                        SELECT SUM(coluna) FROM tabela\n\nExemplos:\nSomar todas as idades:\nSELECT SUM(idade) FROM clientes",
+
         "Somar valores de compras (tabela compras):\nSELECT SUM(valor) FROM compras",
+
         "------------------------------------------- \n3) INTRODUÇÃO AO GROUP BY \n-------------------------------------------\n\nGROUP BY agrupa os registros por uma coluna.\nÉ como separar os dados em “caixinhas” e calcular algo para cada caixinha.\n\nForma geral:\n                        SELECT coluna, função FROM tabela GROUP BY coluna\n\nExemplo simples:\nContar quantos clientes existem em cada cidade:\nSELECT cidade, COUNT(*) FROM clientes GROUP BY cidade",
+
         "Exemplo com soma:\nSomar o valor total de compras por cliente:\nSELECT id_cliente, SUM(valor) FROM compras GROUP BY id_cliente\n\nExemplo com mais de uma coluna:\nSELECT cidade, idade, COUNT(*) FROM clientes GROUP BY cidade, idade",
-        "------------------------------------------- \nDICAS IMPORTANTES\n-------------------------------------------\nSempre que usar COUNT ou SUM com colunas, e quiser separar os resultados por categorias, use GROUP BY.\nToda coluna exibida no SELECT que não for parte de uma função (COUNT, SUM, AVG...) deve aparecer no GROUP BY.\nCOUNT(*) é diferente de COUNT(coluna):\n    - COUNT(*) conta todas as linhas\n    - COUNT(coluna) ignora valores NULL",
-        "RESUMO RÁPIDO\nCOUNT → conta registros\nSUM → soma valores\nGROUP BY → agrupa os resultados para calcular por categoria"
+
+        "------------------------------------------- \n4) USANDO ORDER BY \n-------------------------------------------\n\nORDER BY serve para ordenar os resultados de uma consulta.\nA ordenação pode ser:\n\n    ASC  → ordem crescente (padrão)\n    DESC → ordem decrescente\n\nForma geral:\n                        SELECT coluna FROM tabela ORDER BY coluna ASC|DESC",
+
+        "Exemplos usando números:\n\nOrdenar idades do menor para o maior (ordem crescente):\nSELECT nome, idade FROM clientes ORDER BY idade ASC\n\nOrdenar idades do maior para o menor (ordem decrescente):\nSELECT nome, idade FROM clientes ORDER BY idade DESC",
+
+        "Exemplos usando texto:\n\nOrdenar nomes em ordem alfabética (A até Z):\nSELECT nome FROM clientes ORDER BY nome ASC\n\nOrdenar nomes em ordem alfabética inversa (Z até A):\nSELECT nome FROM clientes ORDER BY nome DESC",
+
+        "Usando ORDER BY com GROUP BY:\nOrdenar cidades pela quantidade de clientes (do maior para o menor):\nSELECT cidade, COUNT(*) FROM clientes GROUP BY cidade ORDER BY COUNT(*) DESC",
+
+        "------------------------------------------- \nDICAS IMPORTANTES\n-------------------------------------------\nSempre que usar COUNT ou SUM com colunas, e quiser separar os resultados por categorias, use GROUP BY.\nToda coluna exibida no SELECT que não for parte de uma função (COUNT, SUM, AVG...) deve aparecer no GROUP BY.\nORDER BY é executado depois do GROUP BY e serve apenas para organizar o resultado final.\nCOUNT(*) é diferente de COUNT(coluna):\n    - COUNT(*) conta todas as linhas\n    - COUNT(coluna) ignora valores NULL",
+
+        "RESUMO RÁPIDO\nCOUNT → conta registros\nSUM → soma valores\nGROUP BY → agrupa os resultados\nORDER BY → ordena os resultados"
     ],
+
     "tip3":[
         "GUIA BÁSICO DE SQL (POSTGRESQL): UPDATE, AVG, HAVING, MIN E MAX\n\nAgora vamos aprender como atualizar dados, calcular médias, filtrar grupos e encontrar valores mínimos e máximos.\nEsses comandos ajudam a modificar informações e a fazer análises mais detalhadas dos dados.",
         "------------------------------------------- \n1) USANDO UPDATE \n-------------------------------------------\n\nUPDATE é usado para modificar dados que já existem em uma tabela.\nÉ como dizer: “mude essa informação para um novo valor”.\n\nForma geral:\n                        UPDATE tabela SET coluna = valor WHERE condição\n\nExemplo:\nAtualizar a cidade de um cliente:\nUPDATE clientes SET cidade = 'Fortaleza' WHERE id = 3",

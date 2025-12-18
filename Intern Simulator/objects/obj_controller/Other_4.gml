@@ -18,6 +18,10 @@ if (room == Office_3) {
 		
 		
 		obj = asset_get_index("obj_" + str_obj)
+		
+		if (!instance_exists(obj)) continue
+		
+		
 		json_obj = phase_data[$ str_obj]
 		active_npc_key = object_get_name(obj)
 		
@@ -55,7 +59,7 @@ if (room == Office_3) {
 
 	if(first_room_start) tips_data = phase_data.tips
 
-	if (fase == "day_2" or fase == "day_3" or fase == "day_4" and object_exists(obj_setor_desbloqueado)) {
+	if (fase == "day_2" or fase == "day_3" or fase == "day_4" and instance_exists(obj_setor_desbloqueado)) {
 		obj_setor_desbloqueado.visible = true
 		
 		if (fase == "day_2") obj_setor_desbloqueado.sprite_index = spr_setor_debloqueado

@@ -127,14 +127,14 @@
             "is_active": true,
             "dialogue_text": [
                 "A meta mensal de Ingrid está incorreta. Me ajuste a ajustar para 75% do valor anterior para manter a integridade dos relatórios de BI.",
-                "UPDATE metas_mensais SET valor_meta = ____ WHERE nome = ____; <CODE>",
+                "UPDATE metas_mensais SET valor_meta = 0.75*____ WHERE nome = ____; <CODE>",
                 "<INPUT>",
-                "UPDATE metas_mensais SET valor_meta = 0.75 WHERE nome = ____; <CODE>",
+                "UPDATE metas_mensais SET valor_meta = 0.75*valor_meta WHERE nome = ____; <CODE>",
                 "<INPUT>",
                 "Obrigado!"
             ],
             "correct_answer": [
-                "valor_meta*0.75",
+                "valor_meta",
                 "ingrid"
             ]
         },
