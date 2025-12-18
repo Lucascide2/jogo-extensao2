@@ -22,6 +22,16 @@ anim()
 
 
 if (keyboard_check_pressed(ord("Z"))) {
+	
+	if (obj_controller.fase == "day_4") {
+		
+		var elevador = instance_place(x, y, obj_elevador)
+		if elevador != noone {
+			keyboard_clear(ord("Z"))
+			elevador.being_used = true
+			exit
+		}
+	}
 
 	if (able_to_interact) {
 	

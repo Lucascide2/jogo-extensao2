@@ -2,7 +2,8 @@ var data = load_json_file("dialogues.json")
 
 
 
-if (room == Office_3) {
+if (room == Office_3 or room == Boss) {
+	if room == Boss first_room_start = true
 	
 	// FASES 1, 2, 3
 	if (variable_global_exists("level")) fase = global.level
