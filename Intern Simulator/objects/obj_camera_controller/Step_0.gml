@@ -1,4 +1,4 @@
-// Referência ao jogador
+ // Referência ao jogador
 var player = obj_player; // substitua se o nome for diferente
 
 if (following && instance_exists(player)) {
