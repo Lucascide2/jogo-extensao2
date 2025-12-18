@@ -1,8 +1,8 @@
 {
   "$GMSprite":"v2",
   "%Name":"spr_lousa",
-  "bboxMode":0,
-  "bbox_bottom":22,
+  "bboxMode":2,
+  "bbox_bottom":25,
   "bbox_left":0,
   "bbox_right":29,
   "bbox_top":0,

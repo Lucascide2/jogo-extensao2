@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_maquina_vazia",
+  "%Name":"obj_lousa",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_maquina_vazia",
+  "name":"obj_lousa",
   "overriddenProperties":[],
   "parent":{
     "name":"Alt",
@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_maquina_vazia",
-    "path":"sprites/spr_maquina_vazia/spr_maquina_vazia.yy",
+    "name":"spr_lousa",
+    "path":"sprites/spr_lousa/spr_lousa.yy",
   },
   "spriteMaskId":null,
   "visible":true,
