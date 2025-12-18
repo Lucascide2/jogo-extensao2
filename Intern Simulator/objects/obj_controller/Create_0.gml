@@ -12,7 +12,7 @@ global.leaving_computer = false
 first_room_start = true
 active_npc_key = noone
 
-active_npcs_names = ["junior", "pleno", "senior", "npc4", "npc6"]
+active_npcs_names = ["junior", "pleno", "senior", "npc4", "npc6", "npc9", "npc10", "npc11", "npc12", "npc13", "npc14"]
 
 active_npcs = ds_map_create()
 

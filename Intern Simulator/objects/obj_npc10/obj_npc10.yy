@@ -10,8 +10,8 @@
     "path":"folders/Objetos/Alt/npcs.yy",
   },
   "parentObjectId":{
-    "name":"obj_pausable",
-    "path":"objects/obj_pausable/obj_pausable.yy",
+    "name":"obj_npc",
+    "path":"objects/obj_npc/obj_npc.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

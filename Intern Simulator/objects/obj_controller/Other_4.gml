@@ -55,7 +55,7 @@ if (room == Office_3) {
 
 	if(first_room_start) tips_data = phase_data.tips
 
-	if (fase == "day_2" or fase == "day_3" or fase == "day_4") {
+	if (fase == "day_2" or fase == "day_3" or fase == "day_4" and object_exists(obj_setor_desbloqueado)) {
 		obj_setor_desbloqueado.visible = true
 		
 		if (fase == "day_2") obj_setor_desbloqueado.sprite_index = spr_setor_debloqueado
