@@ -109,11 +109,8 @@
     {"name":"inst_2D9F2BF9","path":"rooms/Office_3/Office_3.yy",},
     {"name":"inst_123A06E1","path":"rooms/Office_3/Office_3.yy",},
     {"name":"inst_3F0B2B06","path":"rooms/Office_3/Office_3.yy",},
-<<<<<<< HEAD
     {"name":"inst_29087D98","path":"rooms/Office_3/Office_3.yy",},
-=======
     {"name":"inst_6B116317","path":"rooms/Office_3/Office_3.yy",},
->>>>>>> d4532e1 (add: sala do boss)
   ],
   "isDnd":false,
   "layers":[

@@ -324,8 +324,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Boss","path":"rooms/Boss/Boss.yy",},},
     {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
+    {"roomId":{"name":"Boss","path":"rooms/Boss/Boss.yy",},},
     {"roomId":{"name":"Office_3","path":"rooms/Office_3/Office_3.yy",},},
     {"roomId":{"name":"mg_tutorial","path":"rooms/mg_tutorial/mg_tutorial.yy",},},
     {"roomId":{"name":"mg_modelo","path":"rooms/mg_modelo/mg_modelo.yy",},},
