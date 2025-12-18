@@ -58,6 +58,7 @@
   },
   "name":"Intern Simulator",
   "resources":[
+    {"id":{"name":"fnt_dialogue_12","path":"fonts/fnt_dialogue_12/fnt_dialogue_12.yy",},},
     {"id":{"name":"fnt_dialogue_15","path":"fonts/fnt_dialogue_15/fnt_dialogue_15.yy",},},
     {"id":{"name":"fnt_dialogue_25","path":"fonts/fnt_dialogue_25/fnt_dialogue_25.yy",},},
     {"id":{"name":"fnt_dialogue","path":"fonts/fnt_dialogue/fnt_dialogue.yy",},},
@@ -75,6 +76,7 @@
     {"id":{"name":"obj_button_level_menu_level_select_8","path":"objects/obj_button_level_menu_level_select_8/obj_button_level_menu_level_select_8.yy",},},
     {"id":{"name":"obj_button_level_menu_level_select","path":"objects/obj_button_level_menu_level_select/obj_button_level_menu_level_select.yy",},},
     {"id":{"name":"obj_button_play_main_menu","path":"objects/obj_button_play_main_menu/obj_button_play_main_menu.yy",},},
+    {"id":{"name":"obj_button_reset_progress","path":"objects/obj_button_reset_progress/obj_button_reset_progress.yy",},},
     {"id":{"name":"obj_button_selector_main_menu","path":"objects/obj_button_selector_main_menu/obj_button_selector_main_menu.yy",},},
     {"id":{"name":"obj_cadeira","path":"objects/obj_cadeira/obj_cadeira.yy",},},
     {"id":{"name":"obj_camera_batatinha","path":"objects/obj_camera_batatinha/obj_camera_batatinha.yy",},},
@@ -245,6 +247,7 @@
     {"id":{"name":"spr_playerAlt_run_top","path":"sprites/spr_playerAlt_run_top/spr_playerAlt_run_top.yy",},},
     {"id":{"name":"spr_pleno","path":"sprites/spr_pleno/spr_pleno.yy",},},
     {"id":{"name":"spr_quadro","path":"sprites/spr_quadro/spr_quadro.yy",},},
+    {"id":{"name":"spr_reset_progress","path":"sprites/spr_reset_progress/spr_reset_progress.yy",},},
     {"id":{"name":"spr_room","path":"sprites/spr_room/spr_room.yy",},},
     {"id":{"name":"spr_saw_run","path":"sprites/spr_saw_run/spr_saw_run.yy",},},
     {"id":{"name":"spr_senior","path":"sprites/spr_senior/spr_senior.yy",},},

@@ -21,7 +21,7 @@ if (!obj_main_menu.in_main_menu) {
 		}	
 	}  else if (keyboard_check_pressed(vk_down)) {
 		new_option = option + 4
-		if (new_option > 8) {
+		if (new_option > 12) {
 			new_option = -1
 		}	
 	}
@@ -55,6 +55,11 @@ if (!obj_main_menu.in_main_menu) {
 			case 8:
 				obj_selected = obj_button_level_menu_level_select_8
 				break
+			case 9:
+			case 10:
+			case 11:
+			case 12:
+				obj_selected = obj_button_reset_progress
 		}
 		
 		new_option = -1
