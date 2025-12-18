@@ -69,7 +69,7 @@
                 "15"
             ]
         },
-        "pleno": {
+        "npc9": {
             "is_active": true,
             "dialogue_text": [
                 "Forneça o total de vendas realizadas por cada vendedor",
@@ -118,7 +118,7 @@
             "dialogue_text": [],
             "correct_answer": []
         },
-        "senior": {
+        "npc12": {
             "is_active": true,
             "dialogue_text": [
                 "Gostaria que listasse o maior e o menor valor de venda realizados.",
@@ -136,7 +136,7 @@
                 "vendas"
             ]
         },
-        "npc4": {
+        "npc13": {
             "is_active": true,
             "dialogue_text": [
                 "Mostre apenas os vendedores com média de vendas acima de 2000.",
@@ -154,7 +154,7 @@
                 "2000"
             ]
         },
-        "npc6": {
+        "npc14": {
             "is_active": true,
             "dialogue_text": [
                 "Liste a média de vendas por vendedor",

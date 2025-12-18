@@ -1,10 +1,10 @@
 {
   "$GMSprite":"v2",
   "%Name":"spr_npc9",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":21,
   "bbox_left":0,
-  "bbox_right":13,
+  "bbox_right":15,
   "bbox_top":0,
   "collisionKind":4,
   "collisionTolerance":0,
