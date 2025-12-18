@@ -116,7 +116,7 @@
     "resposta": ["MAX", "MIN", "vendas"],
     "conceitos": ["MAX", "MIN", "funções agregadas"]
   },
-  {
+  { 
     "fase": 3,
     "sala": "Sala do Setor de Inteligência",
     "titulo": "Comparativo entre departamentos",

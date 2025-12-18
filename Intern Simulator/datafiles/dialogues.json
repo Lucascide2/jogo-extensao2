@@ -81,10 +81,35 @@
                 "id_vendedor"
             ]
         },
-        "senior": {
-            "is_active": false,
-            "dialogue_text": [],
-            "correct_answer": []
+        "pleno": {
+            "is_active": true,
+            "dialogue_text": [
+                "Descubra quantos funcionários existem em cada departamento.",
+                "SELECT departamento, COUNT(____) AS total FROM funcionarios GROUP BY ____; <CODE>",
+                "<INPUT>",
+                "SELECT departamento, COUNT(*) AS total FROM funcionarios GROUP BY ____; <CODE>",
+                "<INPUT>",
+                "Obrigado!"
+            ],
+            "correct_answer": [
+                "*",
+                "departamento"
+            ]
+        },
+        "npc10": {
+            "is_active": true,
+            "dialogue_text": [
+                "Mostre todas as vendas acima de R$ 1000, ordenadas da maior para a menor.",
+                "SELECT * FROM vendas WHERE valor_venda ____ 1000 ORDER BY valor_venda ____; <CODE>",
+                "<INPUT>",
+                "SELECT * FROM vendas WHERE valor_venda > 1000 ORDER BY valor_venda ____; <CODE>",
+                "<INPUT>",
+                "Obrigado!"
+            ],
+            "correct_answer": [
+                ">",
+                "desc"
+            ]
         },
         "tips": [
             2,
