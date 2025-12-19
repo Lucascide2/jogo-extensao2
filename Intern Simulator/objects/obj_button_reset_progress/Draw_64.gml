@@ -1,4 +1,4 @@
-if (!obj_main_menu.in_main_menu and is_available) {
+if (obj_main_menu.in_main_menu == 0 and is_available) {
     draw_set_font(fnt_dialogue_12);
     draw_set_color(c_black);
 

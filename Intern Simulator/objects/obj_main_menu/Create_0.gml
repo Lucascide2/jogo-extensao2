@@ -1,4 +1,4 @@
-in_main_menu = true
+in_main_menu = 1
 has_pressed_key = false
 
 button_option = 1  // 1 - play   2 - Exit

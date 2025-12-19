@@ -1,6 +1,8 @@
 var data = load_json_file("progress.json")
+show_debug_message(game_save_id)
 
 days_data = data[$ "days"]
+difficult = data[$ "difficult"]
 
 obj = noone
 
@@ -13,5 +15,7 @@ for (var i = 0; i < 8; i++) {
 
 // Carregando configurações dos dias
 global.days_data = days_data
+global.difficult = difficult
 
 show_debug_message(data)
+

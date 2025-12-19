@@ -1,4 +1,4 @@
-if (mudei){
+ if (mudei){
 	alpha -= .03;
 }
 else{

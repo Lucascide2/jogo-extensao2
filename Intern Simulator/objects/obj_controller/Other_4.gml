@@ -1,4 +1,9 @@
-var data = load_json_file("dialogues.json")
+if (global.difficult == "easy") {
+	var data = load_json_file("dialogues.json")
+} else {
+	var data = load_json_file("dialogues2.json")
+}
+
 
 
 

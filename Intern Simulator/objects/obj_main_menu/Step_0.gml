@@ -1,4 +1,4 @@
-if (in_main_menu) {
+if (in_main_menu == 1) {
 	if (keyboard_check_pressed(vk_down)) {
 		button_option = min(button_option + 1, num_buttons)
 		has_pressed_key = true
