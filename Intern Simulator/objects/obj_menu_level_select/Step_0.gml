@@ -1,4 +1,4 @@
-if (!obj_main_menu.in_main_menu) {
+if (obj_main_menu.in_main_menu == 0) {
 	if (keyboard_check_pressed(vk_escape)) {
 		obj_main_menu.in_main_menu = true
 		

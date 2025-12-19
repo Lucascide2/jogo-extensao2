@@ -1,0 +1,275 @@
+{
+    "day_1": {
+        "junior": {
+            "is_active": true,
+            "dialogue_text": [
+                "ESTA DIFICIL",
+                "____ nome, departamento FROM funcionarios ____ departamento = ____; <CODE>",
+                "<INPUT>",
+                "SELECT nome, departamento FROM funcionarios ____ departamento = ____; <CODE>",
+                "<INPUT>",
+                "SELECT nome, departamento FROM funcionarios WHERE departamento = ____; <CODE>",
+                "<INPUT>",
+                "Tamo junto parceiro!"
+            ],
+            "correct_answer": [
+                "select",
+                "where",
+                "suporte"
+            ]
+        },
+        "pleno": {
+            "is_active": true,
+            "dialogue_text": [
+                "Liste os funcionários que fazem aniversário em março, mostrando nome e data formatada.",
+                "SELECT nome, DATE_FORMAT(data_nascimento, '%d/%m') AS aniversario FROM funcionarios WHERE MONTH(data_nascimento) = ____; <CODE>",
+                "<INPUT>",
+                "Valeu!"
+            ],
+            "correct_answer": [
+                "3"
+            ]
+        },
+        "senior": {
+            "is_active": false,
+            "dialogue_text": [],
+            "correct_answer": []
+        },
+        "npc4": {
+            "is_active": false,
+            "dialogue_text": [],
+            "correct_answer": []
+        },
+        "npc6": {
+            "is_active": false,
+            "dialogue_text": [],
+            "correct_answer": []
+        },
+        "tips": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "day_2": {
+        "junior": {
+            "is_active": true,
+            "dialogue_text": [
+                "ESTA_DIFICIL",
+                "SELECT nome FROM funcionarios WHERE id_funcionario = ____; <CODE>",
+                "<INPUT>",
+                "Obrigado!"
+            ],
+            "correct_answer": [
+                "15"
+            ]
+        },
+        "npc9": {
+            "is_active": true,
+            "dialogue_text": [
+                "Forneça o total de vendas realizadas por cada vendedor",
+                "SELECT id_vendedor, SUM(valor_venda) AS total_vendas FROM vendas GROUP BY ____; <CODE>",
+                "<INPUT>",
+                "Obrigado!"
+            ],
+            "correct_answer": [
+                "id_vendedor"
+            ]
+        },
+        "pleno": {
+            "is_active": true,
+            "dialogue_text": [
+                "Descubra quantos funcionários existem em cada departamento.",
+                "SELECT departamento, COUNT(____) AS total FROM funcionarios GROUP BY ____; <CODE>",
+                "<INPUT>",
+                "SELECT departamento, COUNT(*) AS total FROM funcionarios GROUP BY ____; <CODE>",
+                "<INPUT>",
+                "Obrigado!"
+            ],
+            "correct_answer": [
+                "*",
+                "departamento"
+            ]
+        },
+        "npc10": {
+            "is_active": true,
+            "dialogue_text": [
+                "Mostre todas as vendas acima de R$ 1000, ordenadas da maior para a menor.",
+                "SELECT * FROM vendas WHERE valor_venda ____ 1000 ORDER BY valor_venda ____; <CODE>",
+                "<INPUT>",
+                "SELECT * FROM vendas WHERE valor_venda > 1000 ORDER BY valor_venda ____; <CODE>",
+                "<INPUT>",
+                "Obrigado!"
+            ],
+            "correct_answer": [
+                ">",
+                "desc"
+            ]
+        },
+        "tips": [
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "day_3": {
+        "junior": {
+            "is_active": true,
+            "dialogue_text": [
+                "A meta mensal de Ingrid está incorreta. Me ajuste a ajustar para 75% do valor anterior para manter a integridade dos relatórios de BI.",
+                "UPDATE metas_mensais SET valor_meta = 0.75*____ WHERE nome = ____; <CODE>",
+                "<INPUT>",
+                "UPDATE metas_mensais SET valor_meta = 0.75*valor_meta WHERE nome = ____; <CODE>",
+                "<INPUT>",
+                "Obrigado!"
+            ],
+            "correct_answer": [
+                "valor_meta",
+                "ingrid"
+            ]
+        },
+        "pleno": {
+            "is_active": false,
+            "dialogue_text": [],
+            "correct_answer": []
+        },
+        "npc12": {
+            "is_active": true,
+            "dialogue_text": [
+                "Gostaria que listasse o maior e o menor valor de venda realizados.",
+                "SELECT ____(valor_venda) AS maior, ____(valor_venda) AS menor FROM ____; <CODE>",
+                "<INPUT>",
+                "SELECT MAX(valor_venda) AS maior, ____(valor_venda) AS menor FROM ____; <CODE>",
+                "<INPUT>",
+                "SELECT MAX(valor_venda) AS maior, MIN(valor_venda) AS menor FROM ____; <CODE>",
+                "<INPUT>",
+                "Mandou bem!"
+            ],
+            "correct_answer": [
+                "max",
+                "min",
+                "vendas"
+            ]
+        },
+        "npc13": {
+            "is_active": true,
+            "dialogue_text": [
+                "Mostre apenas os vendedores com média de vendas acima de 2000.",
+                "SELECT id_vendedor, AVG(valor_venda) AS media FROM vendas GROUP BY id_vendedor ____ AVG(____) > ____; <CODE>",
+                "<INPUT>",
+                "SELECT id_vendedor, AVG(valor_venda) AS media FROM vendas GROUP BY id_vendedor HAVING AVG(____) > ____; <CODE>",
+                "<INPUT>",
+                "SELECT id_vendedor, AVG(valor_venda) AS media FROM vendas GROUP BY id_vendedor HAVING AVG(valor_venda) > ____; <CODE>",
+                "<INPUT>",
+                "Mandou bem!"
+            ],
+            "correct_answer": [
+                "having",
+                "valor_venda",
+                "2000"
+            ]
+        },
+        "npc14": {
+            "is_active": true,
+            "dialogue_text": [
+                "Liste a média de vendas por vendedor",
+                "SELECT ____, ____(valor_venda) AS media_vendas FROM vendas GROUP BY ____; <CODE>",
+                "<INPUT>",
+                "SELECT nome, ____(valor_venda) AS media_vendas FROM vendas GROUP BY ____; <CODE>",
+                "<INPUT>",
+                "SELECT nome, AVG(valor_venda) AS media_vendas FROM vendas GROUP BY ____: <CODE>",
+                "<INPUT>",
+                "Mandou bem!"
+            ],
+            "correct_answer": [
+                "nome",
+                "avg",
+                "nome"
+            ]
+        },
+        "tips": [
+            2,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "day_4": {
+        "npc5": {
+            "is_active": true,
+            "dialogue_text": [
+                "Olá estagiário, fiquei sabendo que você tem tido um bom desempenho até agora. Vamos ver se você está preparado para lidar com as tarefas de um efetivado.",
+                "Responda corretamente e você poderá se tornar um membro permanente da equipe!",
+                "Vamos lá!",
+                "Liste os nomes dos vendedores com média de vendas superior à média geral, ordenados da maior para a menor média.",
+                "SELECT f.nome, AVG(v.valor_venda) AS media_vendedor FROM ____ v JOIN funcionarios f ON v.id_vendedor = f.id_funcionario GROUP BY f.nome HAVING ____ > (SELECT AVG(____) FROM vendas) ORDER BY media_vendedor ____; <CODE>",
+                "<INPUT>",
+                "SELECT f.nome, AVG(v.valor_venda) AS media_vendedor FROM vendas v JOIN funcionarios f ON v.id_vendedor = f.id_funcionario GROUP BY f.nome HAVING ____ > (SELECT AVG(____) FROM vendas) ORDER BY media_vendedor ____; <CODE>",
+                "<INPUT>",
+                "SELECT f.nome, AVG(v.valor_venda) AS media_vendedor FROM vendas v JOIN funcionarios f ON v.id_vendedor = f.id_funcionario GROUP BY f.nome HAVING media_vendedor > (SELECT AVG(____) FROM vendas) ORDER BY media_vendedor ____; <CODE>",
+                "<INPUT>",
+                "SELECT f.nome, AVG(v.valor_venda) AS media_vendedor FROM vendas v JOIN funcionarios f ON v.id_vendedor = f.id_funcionario GROUP BY f.nome HAVING media_vendedor > (SELECT AVG(valor_venda) FROM vendas) ORDER BY media_vendedor ____; <CODE>",
+                "<INPUT>",
+                "EXCELENTE!!!",
+                "Agora o desafio final... Prepare-se!",
+                "Calcule a média de vendas por departamento com base no vendedor responsável, e mostre apenas departamentos com média acima de 5000.",
+                "SELECT f.departamento, AVG(v.valor_venda) AS media FROM vendas v ____ funcionarios f ON v.id_vendedor = f.id_funcionario GROUP BY f.departamento HAVING ____ > ____; <CODE>",
+                "<INPUT>",
+                "SELECT f.departamento, AVG(v.valor_venda) AS media FROM vendas v JOIN funcionarios f ON v.id_vendedor = f.id_funcionario GROUP BY f.departamento HAVING ____ > ____; <CODE>",
+                "<INPUT>",
+                "SELECT f.departamento, AVG(v.valor_venda) AS media FROM vendas v JOIN funcionarios f ON v.id_vendedor = f.id_funcionario GROUP BY f.departamento HAVING media > ____; <CODE>",
+                "<INPUT>",
+                "Todas as perguntas foram respondidas corretamente! Parabéns por se tornar um membro efetivo da equipe!"                
+
+            ],
+            "correct_answer": [
+                "vendas",
+                "media_vendedor",
+                "valor_venda",
+                "desc",
+                "join",
+                "media",
+                "5000"
+            ]
+        },
+        "pleno": {
+            "is_active": false,
+            "dialogue_text": [],
+            "correct_answer": []
+        },
+        "senior": {
+            "is_active": false,
+            "dialogue_text": [],
+            "correct_answer": []
+        },
+        "npc6": {
+            "is_active": false,
+            "dialogue_text": [],
+            "correct_answer": []
+        },
+        "tips": [
+            2,
+            2,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0
+        ]
+    }
+}

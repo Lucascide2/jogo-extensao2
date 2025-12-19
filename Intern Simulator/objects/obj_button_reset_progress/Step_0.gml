@@ -1,4 +1,4 @@
-if (!obj_main_menu.in_main_menu) {
+if (obj_main_menu.in_main_menu == 0) {
 	var json_text, content, data, file;
 
 	
@@ -8,13 +8,13 @@ if (!obj_main_menu.in_main_menu) {
 			// Alterar
 			
 			data = load_json_file("progress.json")
-			data[$ "days"] = [1, 0, 0, 0, 0, 0, 0, 0]
+			data[$ "days"] = [0, 0, 0, 0, 0, 0, 0, 0]
 			json_text = json_stringify(data)
 			file = file_text_open_write(working_directory +"progress.json")
 			file_text_write_string(file, json_text);
 			file_text_close(file);
 			
-			global.go_to_menu_level_select = true
+			//global.go_to_menu_level_select = true
 			room_goto(Menu)
 		}
 	}
