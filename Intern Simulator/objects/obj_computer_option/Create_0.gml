@@ -4,7 +4,7 @@ is_available = false
 is_unlockable = false
 tip_number = -1
 
-room_to_go = mg_tutorial
+room_to_go = mg_fase1_saw
 
 // Cálculos para obtenção das posições relativas dos objetos
 

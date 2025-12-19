@@ -4,7 +4,7 @@ if (room == Menu and song != song_menu) {
 } else if ((room == Office_3 or room == Computer)and song != song_office) {
 	change_song = true
 	song = song_office
-} else if (array_contains([batatinha_frita, batatinha_frita_2, mg_tutorial], room) and song != song_minigame) {
+} else if (array_contains([batatinha_frita, batatinha_frita_2, mg_fase1_saw], room) and song != song_minigame) {
 	change_song = true
 	song = song_minigame
 } 

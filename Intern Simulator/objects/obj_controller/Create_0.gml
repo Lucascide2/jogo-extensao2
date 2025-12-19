@@ -6,6 +6,7 @@ json_obj = noone
 
 fase = noone
 
+global.chefe_respondido = false
 global.in_screen = false
 global.leaving_computer = false
 

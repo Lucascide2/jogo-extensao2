@@ -25,7 +25,7 @@ var mat = matrix_build(mx, my, 0, 0, 0, 0, scale, scale, 1);
 matrix_set(matrix_world, mat);
 
 // desenha o texto
-draw_text(0, 0, "SELECT");
+draw_text(0, 0, var_text);
 
 // restaura matriz
 matrix_set(matrix_world, m);

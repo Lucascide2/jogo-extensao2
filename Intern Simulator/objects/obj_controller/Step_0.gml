@@ -1,6 +1,6 @@
 
 if (room == Office_3 or room == Boss) {
-	if (room == Office_3 and fase != "day_4" or room = Boss) {
+	if (((room == Office_3  and fase != "day_4") or (room == Boss and fase == "day_4"))) {
 		// Checando se a fase foi completa
 		var json_text, content, data, file, check = true;
 	
@@ -51,10 +51,10 @@ if (room == Office_3 or room == Boss) {
 	if (timer <= 400 and (fase == "day_2" or fase == "day_3" or fase == "day_4") and instance_exists(obj_setor_desbloqueado)) {
 		obj_setor_desbloqueado.visible = false
 	}
-	if (timer <= 0 and fase == "day_2" and !obj_pleno.start_dialogue) {
-		if (obj_pleno.y > 396) obj_pleno.y -= 2
-		else if (obj_pleno.x > 0) obj_pleno.x -= 2
-	}
+	//if (timer <= 0 and fase == "day_2" and !obj_pleno.start_dialogue) {
+	//	if (obj_pleno.y > 396) obj_pleno.y -= 2
+	//	else if (obj_pleno.x > 0) obj_pleno.x -= 2
+	//}
 } else {
 	// Lógica caso seja em outra sala
 }
