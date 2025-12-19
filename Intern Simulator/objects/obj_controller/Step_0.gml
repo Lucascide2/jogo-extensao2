@@ -8,7 +8,7 @@ if (room == Office_3 or room == Boss) {
 		for (var i = 0; i < array_length(active_npcs_names); i ++) {
 			curr_npc =  asset_get_index("obj_" + active_npcs_names[i])
 			if (instance_exists(curr_npc) and  curr_npc.is_active) {
-				check = false
+				check = false 
 				break
 			}  
 		}

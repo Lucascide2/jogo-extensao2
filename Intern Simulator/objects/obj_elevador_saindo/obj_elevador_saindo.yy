@@ -1,7 +1,10 @@
 {
   "$GMObject":"",
   "%Name":"obj_elevador_saindo",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_elevador_saindo",
   "overriddenProperties":[],
@@ -9,7 +12,10 @@
     "name":"Alt",
     "path":"folders/Objetos/Alt.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_elevador",
+    "path":"objects/obj_elevador/obj_elevador.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

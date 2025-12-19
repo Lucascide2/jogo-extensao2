@@ -10,7 +10,7 @@
   "compression":1,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":124.63202,
+  "duration":241.87982,
   "exportDir":"",
   "name":"song_menu",
   "parent":{

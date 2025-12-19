@@ -44,7 +44,7 @@ if (global.pause) {
 			
 		}
 	} else if (obj_menu_esc.obj_selected == "Leave") {
-		if (keyboard_check_pressed(ord("Z"))) {
+		 if (keyboard_check_pressed(ord("Z"))) {
 
 			global.pause = false
 			room_goto(Menu)

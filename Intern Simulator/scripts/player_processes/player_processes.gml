@@ -8,10 +8,10 @@ function reset_variables(){
 }
 
 function input(){
-	if(keyboard_check(ord("W"))) up = 1
-	if(keyboard_check(ord("A"))) left = 1
-	if(keyboard_check(ord("S"))) down = 1
-	if(keyboard_check(ord("D"))) right = 1
+	if(keyboard_check(vk_up)) up = 1
+	if(keyboard_check(vk_left)) left = 1
+	if(keyboard_check(vk_down)) down = 1
+	if(keyboard_check(vk_right)) right = 1
 }
 
 function calc_movement(){

@@ -11,8 +11,8 @@ spawn_y = y;
 
 
 inputs = {
-	left: ord("A"),
-	right: ord("D"),
-	jump: vk_space
+	left: vk_left,
+	right: vk_right,
+	jump: ord("Z")
 }
 

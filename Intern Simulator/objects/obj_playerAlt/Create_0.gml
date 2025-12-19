@@ -1,6 +1,6 @@
 vel = 2
 
-olhando = "right"
+olhando = "down"
 
 able_to_interact = true
 able_to_move = true
